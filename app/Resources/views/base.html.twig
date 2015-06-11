@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Administration Panel{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bower_components/ng-admin/build/ng-admin.min.css') }}"/>
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body ng-app="myApp">
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
+            <script src="{{ asset('bower_components/ng-admin/build/ng-admin.min.js') }}"></script>
+            <script src="{{ asset('js/ng-admin-config.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
