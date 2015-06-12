@@ -136,7 +136,13 @@ class Empresas
      */
     private $idioma;
 
-
+    /**
+     * @var \AppBundle\Entity\Relempresasclientes
+     *
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Relempresasclientes", mappedBy="idEmpresa")
+     *
+     */
+    private $empresasClientes;
 
     /**
      * Set nifCif
@@ -154,7 +160,7 @@ class Empresas
     /**
      * Get nifCif
      *
-     * @return string 
+     * @return string
      */
     public function getNifCif()
     {
@@ -177,7 +183,7 @@ class Empresas
     /**
      * Get nomfiscal
      *
-     * @return string 
+     * @return string
      */
     public function getNomfiscal()
     {
@@ -200,7 +206,7 @@ class Empresas
     /**
      * Get nomcomercial
      *
-     * @return string 
+     * @return string
      */
     public function getNomcomercial()
     {
@@ -223,7 +229,7 @@ class Empresas
     /**
      * Get numplaca
      *
-     * @return string 
+     * @return string
      */
     public function getNumplaca()
     {
@@ -246,7 +252,7 @@ class Empresas
     /**
      * Get facebook
      *
-     * @return string 
+     * @return string
      */
     public function getFacebook()
     {
@@ -269,7 +275,7 @@ class Empresas
     /**
      * Get direccion
      *
-     * @return string 
+     * @return string
      */
     public function getDireccion()
     {
@@ -292,7 +298,7 @@ class Empresas
     /**
      * Get logo
      *
-     * @return string 
+     * @return string
      */
     public function getLogo()
     {
@@ -315,7 +321,7 @@ class Empresas
     /**
      * Get premanoobra
      *
-     * @return string 
+     * @return string
      */
     public function getPremanoobra()
     {
@@ -338,7 +344,7 @@ class Empresas
     /**
      * Get web
      *
-     * @return string 
+     * @return string
      */
     public function getWeb()
     {
@@ -361,7 +367,7 @@ class Empresas
     /**
      * Get activo
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getActivo()
     {
@@ -384,7 +390,7 @@ class Empresas
     /**
      * Get autorizado
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getAutorizado()
     {
@@ -407,7 +413,7 @@ class Empresas
     /**
      * Get proveedor
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getProveedor()
     {
@@ -430,7 +436,7 @@ class Empresas
     /**
      * Get concesionario
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getConcesionario()
     {
@@ -440,7 +446,7 @@ class Empresas
     /**
      * Get idEmpresa
      *
-     * @return integer 
+     * @return integer
      */
     public function getIdEmpresa()
     {
@@ -463,7 +469,7 @@ class Empresas
     /**
      * Get idCodpostal
      *
-     * @return \AppBundle\Entity\Codpostales 
+     * @return \AppBundle\Entity\Codpostales
      */
     public function getIdCodpostal()
     {
@@ -486,7 +492,7 @@ class Empresas
     /**
      * Get idioma
      *
-     * @return \AppBundle\Entity\Idiomas 
+     * @return \AppBundle\Entity\Idiomas
      */
     public function getIdioma()
     {
@@ -495,6 +501,29 @@ class Empresas
 
     public function __toString()
     {
-        return $this->getNomfiscal();
+        return (string)$this->getIdEmpresa();
     }
+
+    public function __construct()
+    {
+        $this->empresasClientes = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getEmpresasClientes()
+    {
+        return $this->empresasClientes;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $empresasClientes
+     */
+    public function setEmpresasClientes($empresasClientes)
+    {
+        $this->empresasClientes[] = $empresasClientes;
+    }
+
+
 }

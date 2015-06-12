@@ -52,7 +52,7 @@ class Relempresasclientes
     /**
      * @var \AppBundle\Entity\Empresas
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Empresas")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Empresas", inversedBy="empresasClientes")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_empresa", referencedColumnName="id_empresa")
      * })
@@ -161,5 +161,10 @@ class Relempresasclientes
     public function getIdEmpresa()
     {
         return $this->idEmpresa;
+    }
+
+    public function __toString()
+    {
+        return $this->getIdEmpresa() . ' - ' . $this->getCodcliente();
     }
 }

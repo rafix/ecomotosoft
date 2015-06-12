@@ -104,12 +104,21 @@ easy_admin:
 #            class: AppBundle\Entity\Detpresupuestos1
 #        Detpresupuestos2:
 #            class: AppBundle\Entity\Detpresupuestos2
-#        Empleados:
-#            class: AppBundle\Entity\Empleados
+        Empleados:
+            class: AppBundle\Entity\Empleados
         Empresas:
             class: AppBundle\Entity\Empresas
             list:
                 fields: [nifCif, nomfiscal, nomcomercial, direccion, activo, autorizado]
+            edit:
+                fields:
+                    - { property: empresasClientes, options: 'allow_add' }
+                    - nifCif
+                    - nomfiscal
+                    - nomcomercial
+                    - direccion
+                    - activo
+                    - autorizado
         Entbancarias:
             label: Entidades Bancarias
             class: AppBundle\Entity\Entbancarias
@@ -133,8 +142,8 @@ easy_admin:
 #            class: AppBundle\Entity\Ingresos
 #        Inventarios:
 #            class: AppBundle\Entity\Inventarios
-#        Marcas:
-#            class: AppBundle\Entity\Marcas
+        Marcas:
+            class: AppBundle\Entity\Marcas
 #        Modelos:
 #            class: AppBundle\Entity\Modelos
 #        Monedas:
@@ -155,6 +164,10 @@ easy_admin:
             class: AppBundle\Entity\Provincias
             list:
                 fields: [provincia1]
+#        Relempresasclientes:
+#            class: AppBundle\Entity\Relempresasclientes
+        Relempresasemails:
+            class: AppBundle\Entity\Relempresasemails
 #        Servicios:
 #            class: AppBundle\Entity\Servicios
 #        Tipacciones:

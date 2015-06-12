@@ -216,4 +216,9 @@ class Tipclientes
     {
         return $this->idTipcliente;
     }
+
+    public function __toString()
+    {
+        return $this->getTipcliente1();
+    }
 }
