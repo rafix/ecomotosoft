@@ -45,7 +45,7 @@ class Relempresasemails
     /**
      * @var \AppBundle\Entity\Empresas
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Empresas")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Empresas", inversedBy="empresasEmails")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_empresa", referencedColumnName="id_empresa")
      * })

@@ -144,6 +144,11 @@ class Empresas
      */
     private $empresasClientes;
 
+    /*
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Relempresasemails", mappedBy="idEmpresa")
+     */
+    private $empresasEmails;
+
     /**
      * Set nifCif
      *
@@ -501,12 +506,13 @@ class Empresas
 
     public function __toString()
     {
-        return (string)$this->getIdEmpresa();
+        return (string)$this->getIdEmpresa() . ' - ' . $this->getNomfiscal();
     }
 
     public function __construct()
     {
         $this->empresasClientes = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->empresasEmails = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -525,5 +531,20 @@ class Empresas
         $this->empresasClientes[] = $empresasClientes;
     }
 
+    /**
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getEmpresasEmails()
+    {
+        return $this->empresasClientes;
+    }
+
+    /**
+     * @param \Doctrine\Common\Collections\ArrayCollection $empresasEmails
+     */
+    public function setEmpresasEmails($empresasEmails)
+    {
+        $this->empresasEmails[] = $empresasEmails;
+    }
 
 }

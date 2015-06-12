@@ -112,7 +112,7 @@ easy_admin:
                 fields: [nifCif, nomfiscal, nomcomercial, direccion, activo, autorizado]
             edit:
                 fields:
-                    - { property: empresasClientes, options: 'allow_add' }
+                    - empresasEmails
                     - nifCif
                     - nomfiscal
                     - nomcomercial
@@ -168,6 +168,12 @@ easy_admin:
 #            class: AppBundle\Entity\Relempresasclientes
         Relempresasemails:
             class: AppBundle\Entity\Relempresasemails
+            list:
+                title: Empresas - Emails
+                fields:
+                    - email
+                    - { property: idTipcontacto, label: Contacto }
+                    - { property: idEmpresa, label: Empresa }
 #        Servicios:
 #            class: AppBundle\Entity\Servicios
 #        Tipacciones:
@@ -176,8 +182,8 @@ easy_admin:
 #            class: AppBundle\Entity\Tipclientes
 #        Tipcombustibles:
 #            class: AppBundle\Entity\Tipcombustibles
-#        Tipcontactos:
-#            class: AppBundle\Entity\Tipcontactos
+        Tipcontactos:
+            class: AppBundle\Entity\Tipcontactos
 #        Tipempleados:
 #            class: AppBundle\Entity\Tipempleados
 #        Tipingresos:

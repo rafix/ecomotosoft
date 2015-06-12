@@ -216,4 +216,9 @@ class Tipcontactos
     {
         return $this->idTipcontacto;
     }
+
+    public function __toString()
+    {
+        return $this->getTipcontacto1();
+    }
 }
