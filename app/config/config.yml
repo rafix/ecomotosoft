@@ -103,9 +103,19 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts:   [admin]
 
+sonata_intl:
+    timezone:
+        default: Europe/Madrid
+        locales:
+            es_ES: Europe/Madrid
+            en_UK: Europe/London
+        detectors:
+            - sonata.intl.timezone_detector.user
+            - sonata.intl.timezone_detector.locale
+
 sonata_admin:
     title:      EcoMotoSoft
-#    title_logo: bundles/acmedemo/img/fancy_acme_logo.png
+    title_logo: images/logo_final.png
 
     dashboard:
         blocks:
@@ -138,3 +148,10 @@ sonata_admin:
                 label: Servicios
                 items:
                     - app.admin.servicios
+
+            app.admin.vehiculos:
+                label: Vehículos
+                items:
+                    - app.admin.vehiculos
+                    - app.admin.tipvehiculos
+                    - app.admin.tipcombustibles
