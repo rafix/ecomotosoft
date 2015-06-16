@@ -28,7 +28,7 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-            ->add('idProducto')
+//            ->add('idProducto')
         ;
     }
 
@@ -50,7 +50,7 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-            ->add('idProducto')
+//            ->add('idProducto')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -79,7 +79,7 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-            ->add('idProducto')
+//            ->add('idProducto')
         ;
     }
 
@@ -101,7 +101,7 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-            ->add('idProducto')
+//            ->add('idProducto')
         ;
     }
 }

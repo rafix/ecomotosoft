@@ -132,4 +132,9 @@ class Relempresascuecorrientes
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getCuecorriente().'-'.$this->getIdEmpresa().'-'.$this->getIdEntbancaria();
+    }
 }

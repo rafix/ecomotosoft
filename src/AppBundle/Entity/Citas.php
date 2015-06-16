@@ -228,4 +228,9 @@ class Citas
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getFechayhora(). '-'. $this->getIdCliente();
+    }
 }

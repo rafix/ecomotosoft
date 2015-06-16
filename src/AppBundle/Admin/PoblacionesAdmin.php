@@ -17,12 +17,12 @@ class PoblacionesAdmin extends Admin
     {
         $datagridMapper
             ->add('poblacion1')
-            ->add('poblacion2')
-            ->add('poblacion3')
-            ->add('poblacion4')
-            ->add('poblacion5')
-            ->add('poblacion6')
-            ->add('idPoblacion')
+//            ->add('poblacion2')
+//            ->add('poblacion3')
+//            ->add('poblacion4')
+//            ->add('poblacion5')
+//            ->add('poblacion6')
+//            ->add('idPoblacion')
         ;
     }
 
@@ -33,12 +33,12 @@ class PoblacionesAdmin extends Admin
     {
         $listMapper
             ->add('poblacion1')
-            ->add('poblacion2')
-            ->add('poblacion3')
-            ->add('poblacion4')
-            ->add('poblacion5')
-            ->add('poblacion6')
-            ->add('idPoblacion')
+//            ->add('poblacion2')
+//            ->add('poblacion3')
+//            ->add('poblacion4')
+//            ->add('poblacion5')
+//            ->add('poblacion6')
+//            ->add('idPoblacion')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -56,12 +56,12 @@ class PoblacionesAdmin extends Admin
     {
         $formMapper
             ->add('poblacion1')
-            ->add('poblacion2')
-            ->add('poblacion3')
-            ->add('poblacion4')
-            ->add('poblacion5')
-            ->add('poblacion6')
-            ->add('idPoblacion')
+//            ->add('poblacion2')
+//            ->add('poblacion3')
+//            ->add('poblacion4')
+//            ->add('poblacion5')
+//            ->add('poblacion6')
+//            ->add('idPoblacion')
         ;
     }
 
@@ -72,12 +72,12 @@ class PoblacionesAdmin extends Admin
     {
         $showMapper
             ->add('poblacion1')
-            ->add('poblacion2')
-            ->add('poblacion3')
-            ->add('poblacion4')
-            ->add('poblacion5')
-            ->add('poblacion6')
-            ->add('idPoblacion')
+//            ->add('poblacion2')
+//            ->add('poblacion3')
+//            ->add('poblacion4')
+//            ->add('poblacion5')
+//            ->add('poblacion6')
+//            ->add('idPoblacion')
         ;
     }
 }

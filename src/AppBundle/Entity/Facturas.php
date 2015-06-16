@@ -417,4 +417,9 @@ class Facturas
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return $this->getNumfactura();
+    }
 }

@@ -249,4 +249,9 @@ class Provincias
     {
         return $this->idPais;
     }
+
+    public function __toString()
+    {
+        return $this->getProvincia1();
+    }
 }

@@ -39,7 +39,7 @@ class ModelosAdmin extends Admin
             ->add('viaanterior')
             ->add('viaposterior')
             ->add('limiteco')
-            ->add('idModelo')
+//            ->add('idModelo')
         ;
     }
 
@@ -72,7 +72,7 @@ class ModelosAdmin extends Admin
             ->add('viaanterior')
             ->add('viaposterior')
             ->add('limiteco')
-            ->add('idModelo')
+//            ->add('idModelo')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -112,7 +112,7 @@ class ModelosAdmin extends Admin
             ->add('viaanterior')
             ->add('viaposterior')
             ->add('limiteco')
-            ->add('idModelo')
+//            ->add('idModelo')
         ;
     }
 
@@ -145,7 +145,7 @@ class ModelosAdmin extends Admin
             ->add('viaanterior')
             ->add('viaposterior')
             ->add('limiteco')
-            ->add('idModelo')
+//            ->add('idModelo')
         ;
     }
 }

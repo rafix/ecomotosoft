@@ -858,4 +858,9 @@ class Modelos
     {
         return $this->idDencomercial;
     }
+
+    public function __toString()
+    {
+        return $this->getModelo();
+    }
 }

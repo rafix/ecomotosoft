@@ -216,4 +216,9 @@ class Tipacciones
     {
         return $this->idTipaccion;
     }
+
+    public function __toString()
+    {
+        return $this->getTipaccion1();
+    }
 }

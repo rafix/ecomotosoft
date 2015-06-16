@@ -276,4 +276,9 @@ class Monedas
     {
         return $this->idMoneda;
     }
+
+    public function __toString()
+    {
+        return $this->getMoneda1();
+    }
 }

@@ -249,4 +249,9 @@ class Poblaciones
     {
         return $this->idProvincia;
     }
+
+    public function __toString()
+    {
+        return $this->getPoblacion1();
+    }
 }

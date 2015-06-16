@@ -99,4 +99,10 @@ class Dencomerciales
     {
         return $this->idFabricante;
     }
+
+    public function __toString()
+    {
+        return $this->getDencomercial();
+    }
+
 }

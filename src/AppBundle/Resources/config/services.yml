@@ -64,3 +64,183 @@ services:
         arguments: [~, AppBundle\Entity\Servicios, AppBundle:ServiciosAdmin]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Servicios}
+
+    app.admin.citas:
+        class: AppBundle\Admin\CitasAdmin
+        arguments: [~, AppBundle\Entity\Citas, AppBundle:CitasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Citas}
+
+    app.admin.clientes:
+        class: AppBundle\Admin\ClientesAdmin
+        arguments: [~, AppBundle\Entity\Clientes, AppBundle:ClientesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Clientes}
+
+    app.admin.detfacturas1:
+        class: AppBundle\Admin\Detfacturas1Admin
+        arguments: [~, AppBundle\Entity\Detfacturas1, AppBundle:Detfacturas1Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detfacturas1}
+
+    app.admin.detfacturas2:
+        class: AppBundle\Admin\Detfacturas2Admin
+        arguments: [~, AppBundle\Entity\Detfacturas2, AppBundle:Detfacturas2Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detfacturas2}
+
+    app.admin.detordenestrabajos1:
+        class: AppBundle\Admin\Detordenestrabajos1Admin
+        arguments: [~, AppBundle\Entity\Detordenestrabajos1, AppBundle:Detordenestrabajos1Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detordenestrabajos1}
+
+    app.admin.detordenestrabajos2:
+        class: AppBundle\Admin\Detordenestrabajos2Admin
+        arguments: [~, AppBundle\Entity\Detordenestrabajos2, AppBundle:Detordenestrabajos2Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detordenestrabajos2}
+
+    app.admin.detpresupuestos1:
+        class: AppBundle\Admin\Detpresupuestos1Admin
+        arguments: [~, AppBundle\Entity\Detpresupuestos1, AppBundle:Detpresupuestos1Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detpresupuestos1}
+
+    app.admin.detpresupuestos2:
+        class: AppBundle\Admin\Detpresupuestos2Admin
+        arguments: [~, AppBundle\Entity\Detpresupuestos2, AppBundle:Detpresupuestos2Admin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Detpresupuestos2}
+
+    app.admin.empleados:
+        class: AppBundle\Admin\EmpleadosAdmin
+        arguments: [~, AppBundle\Entity\Empleados, AppBundle:EmpleadosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Empleados}
+
+    app.admin.empresas:
+        class: AppBundle\Admin\EmpresasAdmin
+        arguments: [~, AppBundle\Entity\Empresas, AppBundle:EmpresasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Empresas}
+
+    app.admin.entbancarias:
+        class: AppBundle\Admin\EntbancariasAdmin
+        arguments: [~, AppBundle\Entity\Entbancarias, AppBundle:EntbancariasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Entbancarias}
+
+    app.admin.entradasosalidas:
+        class: AppBundle\Admin\EntradasosalidasAdmin
+        arguments: [~, AppBundle\Entity\Entradasosalidas, AppBundle:EntradasosalidasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Entradasosalidas}
+
+    app.admin.estados:
+        class: AppBundle\Admin\EstadosAdmin
+        arguments: [~, AppBundle\Entity\Estados, AppBundle:EstadosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Estados}
+
+    app.admin.facturas:
+        class: AppBundle\Admin\FacturasAdmin
+        arguments: [~, AppBundle\Entity\Facturas, AppBundle:FacturasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Facturas}
+
+    app.admin.idiomas:
+        class: AppBundle\Admin\IdiomasAdmin
+        arguments: [~, AppBundle\Entity\Idiomas, AppBundle:IdiomasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Idiomas}
+
+    app.admin.impuestos:
+        class: AppBundle\Admin\ImpuestosAdmin
+        arguments: [~, AppBundle\Entity\Impuestos, AppBundle:ImpuestosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Impuestos}
+
+    app.admin.ingresos:
+        class: AppBundle\Admin\IngresosAdmin
+        arguments: [~, AppBundle\Entity\Ingresos, AppBundle:IngresosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Ingresos}
+
+    app.admin.inventarios:
+        class: AppBundle\Admin\InventariosAdmin
+        arguments: [~, AppBundle\Entity\Inventarios, AppBundle:InventariosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Inventarios}
+
+    app.admin.monedas:
+        class: AppBundle\Admin\MonedasAdmin
+        arguments: [~, AppBundle\Entity\Monedas, AppBundle:MonedasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Monedas}
+
+    app.admin.ordenestrabajos:
+        class: AppBundle\Admin\OrdenestrabajosAdmin
+        arguments: [~, AppBundle\Entity\Ordenestrabajos, AppBundle:OrdenestrabajosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Ordenestrabajos}
+
+    app.admin.presupuestos:
+        class: AppBundle\Admin\PresupuestosAdmin
+        arguments: [~, AppBundle\Entity\Presupuestos, AppBundle:PresupuestosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Presupuestos}
+
+    app.admin.tipacciones:
+        class: AppBundle\Admin\TipaccionesAdmin
+        arguments: [~, AppBundle\Entity\Tipacciones, AppBundle:TipaccionesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipacciones}
+
+    app.admin.tipclientes:
+        class: AppBundle\Admin\TipclientesAdmin
+        arguments: [~, AppBundle\Entity\Tipclientes, AppBundle:TipclientesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipclientes}
+
+    app.admin.tipcombustibles:
+        class: AppBundle\Admin\TipcombustiblesAdmin
+        arguments: [~, AppBundle\Entity\Tipcombustibles, AppBundle:TipcombustiblesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipcombustibles}
+
+    app.admin.tipcontactos:
+        class: AppBundle\Admin\TipcontactosAdmin
+        arguments: [~, AppBundle\Entity\Tipcontactos, AppBundle:TipcontactosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipcontactos}
+
+    app.admin.tipempleados:
+        class: AppBundle\Admin\TipempleadosAdmin
+        arguments: [~, AppBundle\Entity\Tipempleados, AppBundle:TipempleadosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipempleados}
+
+    app.admin.tipingresos:
+        class: AppBundle\Admin\TipingresosAdmin
+        arguments: [~, AppBundle\Entity\Tipingresos, AppBundle:TipingresosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipingresos}
+
+    app.admin.tippagos:
+        class: AppBundle\Admin\TippagosAdmin
+        arguments: [~, AppBundle\Entity\Tippagos, AppBundle:TippagosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tippagos}
+
+    app.admin.tipvehiculos:
+        class: AppBundle\Admin\TipvehiculosAdmin
+        arguments: [~, AppBundle\Entity\Tipvehiculos, AppBundle:TipvehiculosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipvehiculos}
+
+    app.admin.vehiculos:
+        class: AppBundle\Admin\VehiculosAdmin
+        arguments: [~, AppBundle\Entity\Vehiculos, AppBundle:VehiculosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Vehiculos}

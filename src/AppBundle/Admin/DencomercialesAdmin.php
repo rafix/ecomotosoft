@@ -17,7 +17,7 @@ class DencomercialesAdmin extends Admin
     {
         $datagridMapper
             ->add('dencomercial')
-            ->add('idDencomercial')
+//            ->add('idDencomercial')
         ;
     }
 
@@ -28,7 +28,7 @@ class DencomercialesAdmin extends Admin
     {
         $listMapper
             ->add('dencomercial')
-            ->add('idDencomercial')
+//            ->add('idDencomercial')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -46,7 +46,7 @@ class DencomercialesAdmin extends Admin
     {
         $formMapper
             ->add('dencomercial')
-            ->add('idDencomercial')
+//            ->add('idDencomercial')
         ;
     }
 
@@ -57,7 +57,7 @@ class DencomercialesAdmin extends Admin
     {
         $showMapper
             ->add('dencomercial')
-            ->add('idDencomercial')
+//            ->add('idDencomercial')
         ;
     }
 }

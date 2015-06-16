@@ -216,4 +216,9 @@ class Tipcombustibles
     {
         return $this->idTipcombustible;
     }
+
+    public function __toString()
+    {
+        return $this->getTipcombustible1();
+    }
 }

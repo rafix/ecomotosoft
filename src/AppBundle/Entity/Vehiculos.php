@@ -375,4 +375,9 @@ class Vehiculos
     {
         return $this->idPais;
     }
+
+    public function __toString()
+    {
+        return $this->getMatricula();
+    }
 }

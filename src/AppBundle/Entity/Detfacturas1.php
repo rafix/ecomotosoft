@@ -132,4 +132,9 @@ class Detfacturas1
     {
         return $this->idFactura;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getIdDetfactura1();
+    }
 }

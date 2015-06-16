@@ -126,4 +126,9 @@ class Fabricantes
     {
         return $this->idFabricante;
     }
+
+    public function __toString()
+    {
+        return $this->getFabricante();
+    }
 }

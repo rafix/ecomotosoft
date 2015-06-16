@@ -285,4 +285,9 @@ class Ordenestrabajos
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return $this->getNumordentrabajo();
+    }
 }

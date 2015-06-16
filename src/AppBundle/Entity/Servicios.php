@@ -246,4 +246,9 @@ class Servicios
     {
         return $this->idServicio;
     }
+
+    public function __toString()
+    {
+        return $this->getServicio1();
+    }
 }
