@@ -17,12 +17,12 @@ class FamiliasAdmin extends Admin
     {
         $datagridMapper
             ->add('familia1')
-            ->add('familia2')
-            ->add('familia3')
-            ->add('familia4')
-            ->add('familia5')
-            ->add('familia6')
-            ->add('idFamilia')
+//            ->add('familia2')
+//            ->add('familia3')
+//            ->add('familia4')
+//            ->add('familia5')
+//            ->add('familia6')
+//            ->add('idFamilia')
         ;
     }
 
@@ -33,12 +33,12 @@ class FamiliasAdmin extends Admin
     {
         $listMapper
             ->add('familia1')
-            ->add('familia2')
-            ->add('familia3')
-            ->add('familia4')
-            ->add('familia5')
-            ->add('familia6')
-            ->add('idFamilia')
+//            ->add('familia2')
+//            ->add('familia3')
+//            ->add('familia4')
+//            ->add('familia5')
+//            ->add('familia6')
+//            ->add('idFamilia')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -56,12 +56,12 @@ class FamiliasAdmin extends Admin
     {
         $formMapper
             ->add('familia1')
-            ->add('familia2')
-            ->add('familia3')
-            ->add('familia4')
-            ->add('familia5')
-            ->add('familia6')
-            ->add('idFamilia')
+//            ->add('familia2')
+//            ->add('familia3')
+//            ->add('familia4')
+//            ->add('familia5')
+//            ->add('familia6')
+//            ->add('idFamilia')
         ;
     }
 
@@ -72,12 +72,12 @@ class FamiliasAdmin extends Admin
     {
         $showMapper
             ->add('familia1')
-            ->add('familia2')
-            ->add('familia3')
-            ->add('familia4')
-            ->add('familia5')
-            ->add('familia6')
-            ->add('idFamilia')
+//            ->add('familia2')
+//            ->add('familia3')
+//            ->add('familia4')
+//            ->add('familia5')
+//            ->add('familia6')
+//            ->add('idFamilia')
         ;
     }
 }

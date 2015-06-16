@@ -246,4 +246,9 @@ class Tipvehiculos
     {
         return $this->idTipvehiculo;
     }
+
+    public function __toString()
+    {
+        return $this->getTipvehiculo1();
+    }
 }

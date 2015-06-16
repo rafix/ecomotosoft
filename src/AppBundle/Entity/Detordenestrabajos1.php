@@ -132,4 +132,9 @@ class Detordenestrabajos1
     {
         return $this->idOrdentrabajo;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getIdDetordentrabajo1();
+    }
 }

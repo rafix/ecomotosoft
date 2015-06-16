@@ -216,4 +216,9 @@ class Familias
     {
         return $this->idFamilia;
     }
+
+    public function __toString()
+    {
+        return $this->getFamilia1();
+    }
 }

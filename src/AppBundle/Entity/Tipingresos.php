@@ -216,4 +216,9 @@ class Tipingresos
     {
         return $this->idTipingreso;
     }
+
+    public function __toString()
+    {
+        return $this->getTipingreso1();
+    }
 }

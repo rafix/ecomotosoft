@@ -19,7 +19,7 @@ class FabricantesAdmin extends Admin
             ->add('fabricante')
             ->add('web')
             ->add('logo')
-            ->add('idFabricante')
+//            ->add('idFabricante')
         ;
     }
 
@@ -32,7 +32,7 @@ class FabricantesAdmin extends Admin
             ->add('fabricante')
             ->add('web')
             ->add('logo')
-            ->add('idFabricante')
+//            ->add('idFabricante')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -52,7 +52,7 @@ class FabricantesAdmin extends Admin
             ->add('fabricante')
             ->add('web')
             ->add('logo')
-            ->add('idFabricante')
+//            ->add('idFabricante')
         ;
     }
 
@@ -65,7 +65,7 @@ class FabricantesAdmin extends Admin
             ->add('fabricante')
             ->add('web')
             ->add('logo')
-            ->add('idFabricante')
+//            ->add('idFabricante')
         ;
     }
 }

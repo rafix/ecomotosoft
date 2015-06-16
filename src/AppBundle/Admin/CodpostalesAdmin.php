@@ -17,7 +17,7 @@ class CodpostalesAdmin extends Admin
     {
         $datagridMapper
             ->add('codpostal')
-            ->add('idCodpostal')
+//            ->add('idCodpostal')
         ;
     }
 
@@ -28,7 +28,7 @@ class CodpostalesAdmin extends Admin
     {
         $listMapper
             ->add('codpostal')
-            ->add('idCodpostal')
+//            ->add('idCodpostal')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -46,7 +46,7 @@ class CodpostalesAdmin extends Admin
     {
         $formMapper
             ->add('codpostal')
-            ->add('idCodpostal')
+//            ->add('idCodpostal')
         ;
     }
 
@@ -57,7 +57,7 @@ class CodpostalesAdmin extends Admin
     {
         $showMapper
             ->add('codpostal')
-            ->add('idCodpostal')
+//            ->add('idCodpostal')
         ;
     }
 }

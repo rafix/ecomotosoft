@@ -435,4 +435,9 @@ class Empleados
     {
         return $this->idTipempleado;
     }
+
+    public function __toString()
+    {
+        return $this->getNomfiscal();
+    }
 }

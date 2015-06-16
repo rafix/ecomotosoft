@@ -58,11 +58,11 @@ class PaisesAdmin extends Admin
     {
         $formMapper
             ->add('pais1')
-            ->add('pais2')
-            ->add('pais3')
-            ->add('pais4')
-            ->add('pais5')
-            ->add('pais6')
+//            ->add('pais2')
+//            ->add('pais3')
+//            ->add('pais4')
+//            ->add('pais5')
+//            ->add('pais6')
             ->add('bandera')
 //            ->add('idPais')
         ;
@@ -75,11 +75,11 @@ class PaisesAdmin extends Admin
     {
         $showMapper
             ->add('pais1')
-            ->add('pais2')
-            ->add('pais3')
-            ->add('pais4')
-            ->add('pais5')
-            ->add('pais6')
+//            ->add('pais2')
+//            ->add('pais3')
+//            ->add('pais4')
+//            ->add('pais5')
+//            ->add('pais6')
             ->add('bandera')
 //            ->add('idPais')
         ;

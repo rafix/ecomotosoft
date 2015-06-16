@@ -66,4 +66,9 @@ class Impuestos
     {
         return $this->idImpuesto;
     }
+
+    public function __toString()
+    {
+        return $this->getImpuesto();
+    }
 }

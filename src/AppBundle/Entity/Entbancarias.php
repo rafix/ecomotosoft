@@ -66,4 +66,9 @@ class Entbancarias
     {
         return $this->idEntbancaria;
     }
+
+    public function __toString()
+    {
+        return $this->getEntbancaria();
+    }
 }

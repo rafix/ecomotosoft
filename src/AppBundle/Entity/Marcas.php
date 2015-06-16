@@ -156,4 +156,9 @@ class Marcas
     {
         return $this->idMarca;
     }
+
+    public function __toString()
+    {
+        return $this->getMarca();
+    }
 }

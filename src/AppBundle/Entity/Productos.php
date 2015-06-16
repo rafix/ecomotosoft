@@ -462,4 +462,9 @@ class Productos
     {
         return $this->idMarca;
     }
+
+    public function __toString()
+    {
+        return $this->getDescripcion1();
+    }
 }

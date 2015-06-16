@@ -102,4 +102,9 @@ class Relmodelosproductos
     {
         return $this->idModelo;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getIdRelmodeloproducto();
+    }
 }

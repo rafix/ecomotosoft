@@ -17,12 +17,12 @@ class ProvinciasAdmin extends Admin
     {
         $datagridMapper
             ->add('provincia1')
-            ->add('provincia2')
-            ->add('provincia3')
-            ->add('provincia4')
-            ->add('provincia5')
-            ->add('provincia6')
-            ->add('idProvincia')
+//            ->add('provincia2')
+//            ->add('provincia3')
+//            ->add('provincia4')
+//            ->add('provincia5')
+//            ->add('provincia6')
+//            ->add('idProvincia')
         ;
     }
 
@@ -33,12 +33,12 @@ class ProvinciasAdmin extends Admin
     {
         $listMapper
             ->add('provincia1')
-            ->add('provincia2')
-            ->add('provincia3')
-            ->add('provincia4')
-            ->add('provincia5')
-            ->add('provincia6')
-            ->add('idProvincia')
+//            ->add('provincia2')
+//            ->add('provincia3')
+//            ->add('provincia4')
+//            ->add('provincia5')
+//            ->add('provincia6')
+//            ->add('idProvincia')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -56,12 +56,12 @@ class ProvinciasAdmin extends Admin
     {
         $formMapper
             ->add('provincia1')
-            ->add('provincia2')
-            ->add('provincia3')
-            ->add('provincia4')
-            ->add('provincia5')
-            ->add('provincia6')
-            ->add('idProvincia')
+//            ->add('provincia2')
+//            ->add('provincia3')
+//            ->add('provincia4')
+//            ->add('provincia5')
+//            ->add('provincia6')
+//            ->add('idProvincia')
         ;
     }
 
@@ -72,12 +72,12 @@ class ProvinciasAdmin extends Admin
     {
         $showMapper
             ->add('provincia1')
-            ->add('provincia2')
-            ->add('provincia3')
-            ->add('provincia4')
-            ->add('provincia5')
-            ->add('provincia6')
-            ->add('idProvincia')
+//            ->add('provincia2')
+//            ->add('provincia3')
+//            ->add('provincia4')
+//            ->add('provincia5')
+//            ->add('provincia6')
+//            ->add('idProvincia')
         ;
     }
 }

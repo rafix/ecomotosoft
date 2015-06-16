@@ -132,4 +132,9 @@ class Detpresupuestos1
     {
         return $this->idPresupuesto;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getIdDetpresupuesto1();
+    }
 }

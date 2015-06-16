@@ -404,4 +404,9 @@ class Clientes
     {
         return $this->idTipcliente;
     }
+
+    public function __toString()
+    {
+        return $this->getNomfiscal();
+    }
 }

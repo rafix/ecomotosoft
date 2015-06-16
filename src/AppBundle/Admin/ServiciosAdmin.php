@@ -18,12 +18,12 @@ class ServiciosAdmin extends Admin
         $datagridMapper
             ->add('referencia')
             ->add('servicio1')
-            ->add('servicio2')
-            ->add('servicio3')
-            ->add('servicio4')
-            ->add('servicio5')
-            ->add('servicio6')
-            ->add('idServicio')
+//            ->add('servicio2')
+//            ->add('servicio3')
+//            ->add('servicio4')
+//            ->add('servicio5')
+//            ->add('servicio6')
+//            ->add('idServicio')
         ;
     }
 
@@ -35,12 +35,12 @@ class ServiciosAdmin extends Admin
         $listMapper
             ->add('referencia')
             ->add('servicio1')
-            ->add('servicio2')
-            ->add('servicio3')
-            ->add('servicio4')
-            ->add('servicio5')
-            ->add('servicio6')
-            ->add('idServicio')
+//            ->add('servicio2')
+//            ->add('servicio3')
+//            ->add('servicio4')
+//            ->add('servicio5')
+//            ->add('servicio6')
+//            ->add('idServicio')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -59,12 +59,12 @@ class ServiciosAdmin extends Admin
         $formMapper
             ->add('referencia')
             ->add('servicio1')
-            ->add('servicio2')
-            ->add('servicio3')
-            ->add('servicio4')
-            ->add('servicio5')
-            ->add('servicio6')
-            ->add('idServicio')
+//            ->add('servicio2')
+//            ->add('servicio3')
+//            ->add('servicio4')
+//            ->add('servicio5')
+//            ->add('servicio6')
+//            ->add('idServicio')
         ;
     }
 
@@ -76,12 +76,12 @@ class ServiciosAdmin extends Admin
         $showMapper
             ->add('referencia')
             ->add('servicio1')
-            ->add('servicio2')
-            ->add('servicio3')
-            ->add('servicio4')
-            ->add('servicio5')
-            ->add('servicio6')
-            ->add('idServicio')
+//            ->add('servicio2')
+//            ->add('servicio3')
+//            ->add('servicio4')
+//            ->add('servicio5')
+//            ->add('servicio6')
+//            ->add('idServicio')
         ;
     }
 }

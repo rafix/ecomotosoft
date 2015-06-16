@@ -312,4 +312,9 @@ class Paises
     {
         return $this->idMoneda;
     }
+
+    public function __toString()
+    {
+        return $this->getPais1();
+    }
 }

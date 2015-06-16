@@ -99,4 +99,9 @@ class Codpostales
     {
         return $this->idPoblacion;
     }
+
+    public function __toString()
+    {
+        return $this->getCodpostal();
+    }
 }

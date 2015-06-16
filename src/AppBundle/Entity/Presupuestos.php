@@ -411,4 +411,9 @@ class Presupuestos
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return $this->getNumpresupuesto();
+    }
 }

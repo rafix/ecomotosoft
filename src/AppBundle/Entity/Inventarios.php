@@ -192,4 +192,9 @@ class Inventarios
     {
         return $this->idEmpresa;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getIdInventario();
+    }
 }

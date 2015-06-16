@@ -216,4 +216,9 @@ class Tippagos
     {
         return $this->idTippago;
     }
+
+    public function __toString()
+    {
+        return $this->getTippago1();
+    }
 }

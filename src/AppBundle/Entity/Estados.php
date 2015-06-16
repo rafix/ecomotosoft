@@ -216,4 +216,9 @@ class Estados
     {
         return $this->idEstado;
     }
+
+    public function __toString()
+    {
+        return $this->getEstado1();
+    }
 }
