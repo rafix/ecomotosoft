@@ -100,3 +100,31 @@ sonata_admin:
     dashboard:
         blocks:
             - { position: left, type: sonata.admin.block.admin_list }
+        groups:
+            app.admin.geolocalizacion:
+                label: Geolocalización
+#                icon: '<i class="fa fa-folder"></i>'
+                items:
+                    - app.admin.paises
+                    - app.admin.provincias
+                    - app.admin.poblaciones
+                    - app.admin.codpostales
+
+            app.admin.motocicletas:
+                label: Motocicletas
+                items:
+                    - app.admin.fabricantes
+                    - app.admin.dencomerciales
+                    - app.admin.modelos
+
+            app.admin.productos:
+                label: Productos
+                items:
+                    - app.admin.marcas
+                    - app.admin.productos
+                    - app.admin.familias
+
+            app.admin.servicios:
+                label: Servicios
+                items:
+                    - app.admin.servicios
