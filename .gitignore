@@ -13,4 +13,4 @@
 /web/bower_components/
 /web/.bowerrc
 /.idea/
-/web/index.html
+/npm-debug.log

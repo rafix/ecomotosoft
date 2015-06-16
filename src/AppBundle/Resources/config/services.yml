@@ -1,0 +1,66 @@
+services:
+    app.admin.paises:
+        class: AppBundle\Admin\PaisesAdmin
+        arguments: [~, AppBundle\Entity\Paises, AppBundle:PaisesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Paises}
+
+    app.admin.provincias:
+        class: AppBundle\Admin\ProvinciasAdmin
+        arguments: [~, AppBundle\Entity\Provincias, AppBundle:ProvinciasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Provincias}
+
+    app.admin.poblaciones:
+        class: AppBundle\Admin\PoblacionesAdmin
+        arguments: [~, AppBundle\Entity\Poblaciones, AppBundle:PoblacionesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Poblaciones}
+
+    app.admin.codpostales:
+        class: AppBundle\Admin\CodpostalesAdmin
+        arguments: [~, AppBundle\Entity\Codpostales, AppBundle:CodpostalesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Codpostales}
+
+    app.admin.fabricantes:
+        class: AppBundle\Admin\FabricantesAdmin
+        arguments: [~, AppBundle\Entity\Fabricantes, AppBundle:FabricantesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Fabricantes}
+
+    app.admin.dencomerciales:
+        class: AppBundle\Admin\DencomercialesAdmin
+        arguments: [~, AppBundle\Entity\Dencomerciales, AppBundle:DencomercialesAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Dencomerciales}
+
+    app.admin.modelos:
+        class: AppBundle\Admin\ModelosAdmin
+        arguments: [~, AppBundle\Entity\Modelos, AppBundle:ModelosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Modelos}
+
+    app.admin.productos:
+        class: AppBundle\Admin\ProductosAdmin
+        arguments: [~, AppBundle\Entity\Productos, AppBundle:ProductosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Productos}
+
+    app.admin.marcas:
+        class: AppBundle\Admin\MarcasAdmin
+        arguments: [~, AppBundle\Entity\Marcas, AppBundle:MarcasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Marcas}
+
+    app.admin.familias:
+        class: AppBundle\Admin\FamiliasAdmin
+        arguments: [~, AppBundle\Entity\Familias, AppBundle:FamiliasAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Familias}
+
+    app.admin.servicios:
+        class: AppBundle\Admin\ServiciosAdmin
+        arguments: [~, AppBundle\Entity\Servicios, AppBundle:ServiciosAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Servicios}

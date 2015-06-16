@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Lemon\RestBundle\Annotation as Rest;
+
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as Serializer;
 
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as Serializer;
  *
  * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais_1", columns={"pais_1"}), @ORM\UniqueConstraint(name="pais_2", columns={"pais_2"}), @ORM\UniqueConstraint(name="pais_3", columns={"pais_3"}), @ORM\UniqueConstraint(name="pais_4", columns={"pais_4"}), @ORM\UniqueConstraint(name="pais_5", columns={"pais_5"}), @ORM\UniqueConstraint(name="pais_6", columns={"pais_6"}), @ORM\UniqueConstraint(name="bandera", columns={"bandera"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
  * @ORM\Entity
- * @Rest\Resource(name="paises")
+ *
  */
 class Paises
 {

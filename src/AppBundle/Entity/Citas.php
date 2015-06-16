@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Lemon\RestBundle\Annotation as Rest;
+
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as Serializer;
 
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as Serializer;
  *
  * @ORM\Table(name="citas", indexes={@ORM\Index(name="id_empresa", columns={"id_empresa"}), @ORM\Index(name="id_cliente", columns={"id_cliente"}), @ORM\Index(name="id_tipingreso", columns={"id_tipingreso"}), @ORM\Index(name="id_vehiculo", columns={"id_vehiculo"})})
  * @ORM\Entity
- * @Rest\Resource(name="citas")
+ *
  */
 class Citas
 {

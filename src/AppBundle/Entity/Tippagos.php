@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Lemon\RestBundle\Annotation as Rest;
+
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as Serializer;
 
@@ -12,7 +12,7 @@ use JMS\Serializer\Annotation as Serializer;
  *
  * @ORM\Table(name="tippagos", uniqueConstraints={@ORM\UniqueConstraint(name="tippago_1", columns={"tippago_1"}), @ORM\UniqueConstraint(name="tippago_2", columns={"tippago_2"}), @ORM\UniqueConstraint(name="tippago_3", columns={"tippago_3"}), @ORM\UniqueConstraint(name="tippago_4", columns={"tippago_4"}), @ORM\UniqueConstraint(name="tippago_5", columns={"tippago_5"}), @ORM\UniqueConstraint(name="tippago_6", columns={"tippago_6"})})
  * @ORM\Entity
- * @Rest\Resource(name="tippagos")
+ *
  */
 class Tippagos
 {

@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: @AppBundle/Resources/config/services.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -71,6 +72,12 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
+doctrine_migrations:
+    dir_name: %kernel.root_dir%/DoctrineMigrations
+    namespace: Application\Migrations
+    table_name: migration_versions
+    name: Application Migrations
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"
@@ -79,118 +86,13 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-easy_admin:
-    site_name: EcoMotoSoft
-    design:
-#        brand_color: 'rgba(26, 188, 156, 0.85)'
-    entities:
-#        Citas:
-#            class: AppBundle\Entity\Citas
-#        Clientes:
-#            class: AppBundle\Entity\Clientes
-        Codpostales:
-            class: AppBundle\Entity\Codpostales
-#        Dencomerciales:
-#            class: AppBundle\Entity\Dencomerciales
-#        Detfacturas1:
-#            class: AppBundle\Entity\Detfacturas1
-#        Detfacturas2:
-#            class: AppBundle\Entity\Detfacturas2
-#        Detordenestrabajo1:
-#            class: AppBundle\Entity\Detordenestrabajo1
-#        Detordenestrabajo2:
-#            class: AppBundle\Entity\Detordenestrabajo2
-#        Detpresupuestos1:
-#            class: AppBundle\Entity\Detpresupuestos1
-#        Detpresupuestos2:
-#            class: AppBundle\Entity\Detpresupuestos2
-        Empleados:
-            class: AppBundle\Entity\Empleados
-        Empresas:
-            class: AppBundle\Entity\Empresas
-            list:
-                fields: [nifCif, nomfiscal, nomcomercial, direccion, activo, autorizado]
-            edit:
-                fields:
-                    - empresasEmails
-                    - nifCif
-                    - nomfiscal
-                    - nomcomercial
-                    - direccion
-                    - activo
-                    - autorizado
-        Entbancarias:
-            label: Entidades Bancarias
-            class: AppBundle\Entity\Entbancarias
-#        Entradasosalidas:
-#            class: AppBundle\Entity\Entradasosalidas
-#        Estados:
-#            class: AppBundle\Entity\Estados
-#        Fabricantes:
-#            class: AppBundle\Entity\Fabricantes
-#        Facturas:
-#            class: AppBundle\Entity\Facturas
-#        Familias:
-#            class: AppBundle\Entity\Familias
-        Idiomas:
-            class: AppBundle\Entity\Idiomas
-            list:
-                fields: [idioma1]
-#        Impuestos:
-#            class: AppBundle\Entity\Impuestos
-#        Ingresos:
-#            class: AppBundle\Entity\Ingresos
-#        Inventarios:
-#            class: AppBundle\Entity\Inventarios
-        Marcas:
-            class: AppBundle\Entity\Marcas
-#        Modelos:
-#            class: AppBundle\Entity\Modelos
-#        Monedas:
-#            class: AppBundle\Entity\Monedas
-#        Ordenestrabajo:
-#            class: AppBundle\Entity\Ordenestrabajos
-        Paises:
-            class: AppBundle\Entity\Paises
-            list:
-                fields: [pais1, bandera]
-#        Poblaciones:
-#            class: AppBundle\Entity\Poblaciones
-#        Presupuestos:
-#            class: AppBundle\Entity\Presupuestos
-#        Productos:
-#            class: AppBundle\Entity\Productos
-        Provincias:
-            class: AppBundle\Entity\Provincias
-            list:
-                fields: [provincia1]
-#        Relempresasclientes:
-#            class: AppBundle\Entity\Relempresasclientes
-        Relempresasemails:
-            class: AppBundle\Entity\Relempresasemails
-            list:
-                title: Empresas - Emails
-                fields:
-                    - email
-                    - { property: idTipcontacto, label: Contacto }
-                    - { property: idEmpresa, label: Empresa }
-#        Servicios:
-#            class: AppBundle\Entity\Servicios
-#        Tipacciones:
-#            class: AppBundle\Entity\Tipacciones
-#        Tipclientes:
-#            class: AppBundle\Entity\Tipclientes
-#        Tipcombustibles:
-#            class: AppBundle\Entity\Tipcombustibles
-        Tipcontactos:
-            class: AppBundle\Entity\Tipcontactos
-#        Tipempleados:
-#            class: AppBundle\Entity\Tipempleados
-#        Tipingresos:
-#            class: AppBundle\Entity\Tipingresos
-#        Tippagos:
-#            class: AppBundle\Entity\Tippagos
-#        Tipvehiculos:
-#            class: AppBundle\Entity\Tipvehiculos
-#        Vehiculos:
-#            class: AppBundle\Entity\Vehiculos
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # Enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+sonata_admin:
+    title:      EcoMotoSoft
+#    title_logo: bundles/acmedemo/img/fancy_acme_logo.png
