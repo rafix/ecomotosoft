@@ -3,7 +3,7 @@ services:
         class: AppBundle\Admin\PaisesAdmin
         arguments: [~, AppBundle\Entity\Paises, AppBundle:PaisesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: Geolocalización, label: Paises}
+            - {name: sonata.admin, manager_type: orm, group: Geolocalización, label: Países}
 
     app.admin.provincias:
         class: AppBundle\Admin\ProvinciasAdmin
@@ -21,7 +21,7 @@ services:
         class: AppBundle\Admin\CodpostalesAdmin
         arguments: [~, AppBundle\Entity\Codpostales, AppBundle:CodpostalesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: Geolocalización, label: Codpostales}
+            - {name: sonata.admin, manager_type: orm, group: Geolocalización, label: Códigos Postales}
 
     app.admin.fabricantes:
         class: AppBundle\Admin\FabricantesAdmin
@@ -33,7 +33,7 @@ services:
         class: AppBundle\Admin\DencomercialesAdmin
         arguments: [~, AppBundle\Entity\Dencomerciales, AppBundle:DencomercialesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: Motocicletas, label: Dencomerciales}
+            - {name: sonata.admin, manager_type: orm, group: Motocicletas, label: Den. Comerciales}
 
     app.admin.modelos:
         class: AppBundle\Admin\ModelosAdmin
