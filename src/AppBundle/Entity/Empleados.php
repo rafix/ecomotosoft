@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Empleados
  *
- * @ORM\Table(name="empleados", uniqueConstraints={@ORM\UniqueConstraint(name="nif_cif", columns={"nif_cif"}), @ORM\UniqueConstraint(name="nss", columns={"nss"})}, indexes={@ORM\Index(name="id_tipempleado", columns={"id_tipempleado"}), @ORM\Index(name="id_idioma", columns={"id_idioma"}), @ORM\Index(name="id_codpostal", columns={"id_codpostal"})})
+ * @ORM\Table(name="empleados", uniqueConstraints={@ORM\UniqueConstraint(name="nif_cif", columns={"nif_cif"}), @ORM\UniqueConstraint(name="nss", columns={"nss"})}, indexes={@ORM\Index(name="id_tipempleado", columns={"id_tipempleado"}), @ORM\Index(name="id_codpostal", columns={"id_codpostal"})})
  * @ORM\Entity
  *
  */
@@ -104,16 +104,6 @@ class Empleados
      * })
      */
     private $idCodpostal;
-
-    /**
-     * @var \AppBundle\Entity\Idiomas
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Idiomas")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_idioma", referencedColumnName="id_idioma")
-     * })
-     */
-    private $idioma;
 
     /**
      * @var \AppBundle\Entity\Tipempleados
@@ -388,29 +378,6 @@ class Empleados
     public function getIdCodpostal()
     {
         return $this->idCodpostal;
-    }
-
-    /**
-     * Set idioma
-     *
-     * @param \AppBundle\Entity\Idiomas $idioma
-     * @return Empleados
-     */
-    public function setIdioma(\AppBundle\Entity\Idiomas $idioma = null)
-    {
-        $this->idioma = $idioma;
-
-        return $this;
-    }
-
-    /**
-     * Get idioma
-     *
-     * @return \AppBundle\Entity\Idiomas 
-     */
-    public function getIdioma()
-    {
-        return $this->idioma;
     }
 
     /**

@@ -9,7 +9,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Clientes
  *
- * @ORM\Table(name="clientes", uniqueConstraints={@ORM\UniqueConstraint(name="nif_cif", columns={"nif_cif"})}, indexes={@ORM\Index(name="id_tipcliente", columns={"id_tipcliente"}), @ORM\Index(name="id_idioma", columns={"id_idioma"}), @ORM\Index(name="id_codpostal", columns={"id_codpostal"})})
+ * @ORM\Table(name="clientes", uniqueConstraints={@ORM\UniqueConstraint(name="nif_cif", columns={"nif_cif"})}, indexes={@ORM\Index(name="id_tipcliente", columns={"id_tipcliente"}), @ORM\Index(name="id_codpostal", columns={"id_codpostal"})})
  * @ORM\Entity
  *
  */
@@ -96,16 +96,6 @@ class Clientes
      * })
      */
     private $idCodpostal;
-
-    /**
-     * @var \AppBundle\Entity\Idiomas
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Idiomas")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_idioma", referencedColumnName="id_idioma")
-     * })
-     */
-    private $idioma;
 
     /**
      * @var \AppBundle\Entity\Tipclientes
@@ -357,29 +347,6 @@ class Clientes
     public function getIdCodpostal()
     {
         return $this->idCodpostal;
-    }
-
-    /**
-     * Set idioma
-     *
-     * @param \AppBundle\Entity\Idiomas $idioma
-     * @return Clientes
-     */
-    public function setIdioma(\AppBundle\Entity\Idiomas $idioma = null)
-    {
-        $this->idioma = $idioma;
-
-        return $this;
-    }
-
-    /**
-     * Get idioma
-     *
-     * @return \AppBundle\Entity\Idiomas 
-     */
-    public function getIdioma()
-    {
-        return $this->idioma;
     }
 
     /**

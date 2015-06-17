@@ -149,12 +149,6 @@ services:
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Facturas}
 
-    app.admin.idiomas:
-        class: AppBundle\Admin\IdiomasAdmin
-        arguments: [~, AppBundle\Entity\Idiomas, AppBundle:IdiomasAdmin]
-        tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Idiomas}
-
     app.admin.impuestos:
         class: AppBundle\Admin\ImpuestosAdmin
         arguments: [~, AppBundle\Entity\Impuestos, AppBundle:ImpuestosAdmin]

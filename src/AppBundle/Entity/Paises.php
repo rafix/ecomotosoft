@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Paises
  *
- * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais", columns={"pais"}), @ORM\UniqueConstraint(name="bandera", columns={"bandera"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
+ * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais", columns={"pais"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
  * @ORM\Entity
  *
  */
@@ -22,13 +22,6 @@ class Paises
      * @ORM\Column(name="pais", type="string", length=50, nullable=false)
      */
     private $pais;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="bandera", type="string", length=255, nullable=true)
-     */
-    private $bandera;
 
     /**
      * @var integer
@@ -82,29 +75,6 @@ class Paises
     public function getPais()
     {
         return $this->pais;
-    }
-
-    /**
-     * Set bandera
-     *
-     * @param string $bandera
-     * @return Paises
-     */
-    public function setBandera($bandera)
-    {
-        $this->bandera = $bandera;
-
-        return $this;
-    }
-
-    /**
-     * Get bandera
-     *
-     * @return string 
-     */
-    public function getBandera()
-    {
-        return $this->bandera;
     }
 
     /**
