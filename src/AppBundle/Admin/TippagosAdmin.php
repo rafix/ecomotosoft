@@ -16,7 +16,7 @@ class TippagosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tippago1')
+            ->add('tippago')
 //            ->add('tippago2')
 //            ->add('tippago3')
 //            ->add('tippago4')
@@ -32,7 +32,7 @@ class TippagosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tippago1')
+            ->add('tippago')
 //            ->add('tippago2')
 //            ->add('tippago3')
 //            ->add('tippago4')
@@ -41,7 +41,6 @@ class TippagosAdmin extends Admin
 //            ->add('idTippago')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class TippagosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tippago1')
+            ->add('tippago')
 //            ->add('tippago2')
 //            ->add('tippago3')
 //            ->add('tippago4')
@@ -71,7 +70,7 @@ class TippagosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tippago1')
+            ->add('tippago')
 //            ->add('tippago2')
 //            ->add('tippago3')
 //            ->add('tippago4')

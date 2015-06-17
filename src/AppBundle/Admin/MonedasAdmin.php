@@ -16,12 +16,7 @@ class MonedasAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('moneda1')
-            ->add('moneda2')
-            ->add('moneda3')
-            ->add('moneda4')
-            ->add('moneda5')
-            ->add('moneda6')
+            ->add('moneda')
             ->add('simbolo')
             ->add('tipcambio')
 //            ->add('idMoneda')
@@ -34,18 +29,12 @@ class MonedasAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('moneda1')
-            ->add('moneda2')
-            ->add('moneda3')
-            ->add('moneda4')
-            ->add('moneda5')
-            ->add('moneda6')
+            ->add('moneda')
             ->add('simbolo')
             ->add('tipcambio')
 //            ->add('idMoneda')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -59,12 +48,7 @@ class MonedasAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('moneda1')
-            ->add('moneda2')
-            ->add('moneda3')
-            ->add('moneda4')
-            ->add('moneda5')
-            ->add('moneda6')
+            ->add('moneda')
             ->add('simbolo')
             ->add('tipcambio')
 //            ->add('idMoneda')
@@ -77,12 +61,7 @@ class MonedasAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('moneda1')
-            ->add('moneda2')
-            ->add('moneda3')
-            ->add('moneda4')
-            ->add('moneda5')
-            ->add('moneda6')
+            ->add('moneda')
             ->add('simbolo')
             ->add('tipcambio')
 //            ->add('idMoneda')

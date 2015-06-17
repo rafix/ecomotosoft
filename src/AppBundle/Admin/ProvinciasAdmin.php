@@ -16,7 +16,7 @@ class ProvinciasAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('provincia1')
+            ->add('provincia')
 //            ->add('provincia2')
 //            ->add('provincia3')
 //            ->add('provincia4')
@@ -32,7 +32,7 @@ class ProvinciasAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('provincia1')
+            ->add('provincia')
 //            ->add('provincia2')
 //            ->add('provincia3')
 //            ->add('provincia4')
@@ -41,7 +41,6 @@ class ProvinciasAdmin extends Admin
 //            ->add('idProvincia')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class ProvinciasAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('provincia1')
+            ->add('provincia')
 //            ->add('provincia2')
 //            ->add('provincia3')
 //            ->add('provincia4')
@@ -71,7 +70,7 @@ class ProvinciasAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('provincia1')
+            ->add('provincia')
 //            ->add('provincia2')
 //            ->add('provincia3')
 //            ->add('provincia4')

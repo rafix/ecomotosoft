@@ -45,7 +45,6 @@ class VehiculosAdmin extends Admin
 //            ->add('idVehiculo')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

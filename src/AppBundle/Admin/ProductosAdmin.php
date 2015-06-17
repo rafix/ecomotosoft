@@ -17,12 +17,7 @@ class ProductosAdmin extends Admin
     {
         $datagridMapper
             ->add('referencia')
-            ->add('descripcion1')
-            ->add('descripcion2')
-            ->add('descripcion3')
-            ->add('descripcion4')
-            ->add('descripcion5')
-            ->add('descripcion6')
+            ->add('descripcion')
             ->add('ean13')
             ->add('pvp')
             ->add('imagen1')
@@ -39,12 +34,7 @@ class ProductosAdmin extends Admin
     {
         $listMapper
             ->add('referencia')
-            ->add('descripcion1')
-            ->add('descripcion2')
-            ->add('descripcion3')
-            ->add('descripcion4')
-            ->add('descripcion5')
-            ->add('descripcion6')
+            ->add('descripcion')
             ->add('ean13')
             ->add('pvp')
             ->add('imagen1')
@@ -53,7 +43,6 @@ class ProductosAdmin extends Admin
 //            ->add('idProducto')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -68,12 +57,7 @@ class ProductosAdmin extends Admin
     {
         $formMapper
             ->add('referencia')
-            ->add('descripcion1')
-            ->add('descripcion2')
-            ->add('descripcion3')
-            ->add('descripcion4')
-            ->add('descripcion5')
-            ->add('descripcion6')
+            ->add('descripcion')
             ->add('ean13')
             ->add('pvp')
             ->add('imagen1')
@@ -90,12 +74,7 @@ class ProductosAdmin extends Admin
     {
         $showMapper
             ->add('referencia')
-            ->add('descripcion1')
-            ->add('descripcion2')
-            ->add('descripcion3')
-            ->add('descripcion4')
-            ->add('descripcion5')
-            ->add('descripcion6')
+            ->add('descripcion')
             ->add('ean13')
             ->add('pvp')
             ->add('imagen1')

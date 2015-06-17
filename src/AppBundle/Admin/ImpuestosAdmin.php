@@ -31,7 +31,6 @@ class ImpuestosAdmin extends Admin
 //            ->add('idImpuesto')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

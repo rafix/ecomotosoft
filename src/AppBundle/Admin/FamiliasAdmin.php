@@ -16,7 +16,7 @@ class FamiliasAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('familia1')
+            ->add('familia')
 //            ->add('familia2')
 //            ->add('familia3')
 //            ->add('familia4')
@@ -32,7 +32,7 @@ class FamiliasAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('familia1')
+            ->add('familia')
 //            ->add('familia2')
 //            ->add('familia3')
 //            ->add('familia4')
@@ -41,7 +41,6 @@ class FamiliasAdmin extends Admin
 //            ->add('idFamilia')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class FamiliasAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('familia1')
+            ->add('familia')
 //            ->add('familia2')
 //            ->add('familia3')
 //            ->add('familia4')
@@ -71,7 +70,7 @@ class FamiliasAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('familia1')
+            ->add('familia')
 //            ->add('familia2')
 //            ->add('familia3')
 //            ->add('familia4')

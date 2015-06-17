@@ -31,7 +31,6 @@ class Detfacturas1Admin extends Admin
 //            ->add('idDetfactura1')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

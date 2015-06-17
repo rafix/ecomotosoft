@@ -16,12 +16,7 @@ class TipclientesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipcliente1')
-            ->add('tipcliente2')
-            ->add('tipcliente3')
-            ->add('tipcliente4')
-            ->add('tipcliente5')
-            ->add('tipcliente6')
+            ->add('tipcliente')
 //            ->add('idTipcliente')
         ;
     }
@@ -32,16 +27,10 @@ class TipclientesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipcliente1')
-            ->add('tipcliente2')
-            ->add('tipcliente3')
-            ->add('tipcliente4')
-            ->add('tipcliente5')
-            ->add('tipcliente6')
+            ->add('tipcliente')
 //            ->add('idTipcliente')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,12 +44,7 @@ class TipclientesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipcliente1')
-            ->add('tipcliente2')
-            ->add('tipcliente3')
-            ->add('tipcliente4')
-            ->add('tipcliente5')
-            ->add('tipcliente6')
+            ->add('tipcliente')
 //            ->add('idTipcliente')
         ;
     }
@@ -71,12 +55,7 @@ class TipclientesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipcliente1')
-            ->add('tipcliente2')
-            ->add('tipcliente3')
-            ->add('tipcliente4')
-            ->add('tipcliente5')
-            ->add('tipcliente6')
+            ->add('tipcliente')
 //            ->add('idTipcliente')
         ;
     }

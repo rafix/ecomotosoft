@@ -31,7 +31,6 @@ class EntbancariasAdmin extends Admin
 //            ->add('idEntbancaria')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
