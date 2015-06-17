@@ -16,7 +16,7 @@ class TipingresosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipingreso1')
+            ->add('tipingreso')
 //            ->add('tipingreso2')
 //            ->add('tipingreso3')
 //            ->add('tipingreso4')
@@ -32,7 +32,7 @@ class TipingresosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipingreso1')
+            ->add('tipingreso')
 //            ->add('tipingreso2')
 //            ->add('tipingreso3')
 //            ->add('tipingreso4')
@@ -41,7 +41,6 @@ class TipingresosAdmin extends Admin
 //            ->add('idTipingreso')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class TipingresosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipingreso1')
+            ->add('tipingreso')
 //            ->add('tipingreso2')
 //            ->add('tipingreso3')
 //            ->add('tipingreso4')
@@ -71,7 +70,7 @@ class TipingresosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipingreso1')
+            ->add('tipingreso')
 //            ->add('tipingreso2')
 //            ->add('tipingreso3')
 //            ->add('tipingreso4')

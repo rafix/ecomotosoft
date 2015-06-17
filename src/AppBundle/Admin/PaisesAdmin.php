@@ -16,7 +16,7 @@ class PaisesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('pais1')
+            ->add('pais')
 //            ->add('pais2')
 //            ->add('pais3')
 //            ->add('pais4')
@@ -33,7 +33,7 @@ class PaisesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('pais1')
+            ->add('pais')
 //            ->add('pais2')
 //            ->add('pais3')
 //            ->add('pais4')
@@ -43,7 +43,6 @@ class PaisesAdmin extends Admin
 //            ->add('idPais')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -57,7 +56,7 @@ class PaisesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('pais1')
+            ->add('pais')
 //            ->add('pais2')
 //            ->add('pais3')
 //            ->add('pais4')
@@ -74,7 +73,7 @@ class PaisesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('pais1')
+            ->add('pais')
 //            ->add('pais2')
 //            ->add('pais3')
 //            ->add('pais4')

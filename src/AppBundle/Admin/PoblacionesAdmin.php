@@ -16,7 +16,7 @@ class PoblacionesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('poblacion1')
+            ->add('poblacion')
 //            ->add('poblacion2')
 //            ->add('poblacion3')
 //            ->add('poblacion4')
@@ -32,7 +32,7 @@ class PoblacionesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('poblacion1')
+            ->add('poblacion')
 //            ->add('poblacion2')
 //            ->add('poblacion3')
 //            ->add('poblacion4')
@@ -41,7 +41,6 @@ class PoblacionesAdmin extends Admin
 //            ->add('idPoblacion')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class PoblacionesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('poblacion1')
+            ->add('poblacion')
 //            ->add('poblacion2')
 //            ->add('poblacion3')
 //            ->add('poblacion4')
@@ -71,7 +70,7 @@ class PoblacionesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('poblacion1')
+            ->add('poblacion')
 //            ->add('poblacion2')
 //            ->add('poblacion3')
 //            ->add('poblacion4')

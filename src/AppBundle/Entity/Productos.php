@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Productos
  *
- * @ORM\Table(name="productos", uniqueConstraints={@ORM\UniqueConstraint(name="descripcion_1", columns={"descripcion_1"}), @ORM\UniqueConstraint(name="descripcion_2", columns={"descripcion_2"}), @ORM\UniqueConstraint(name="descripcion_3", columns={"descripcion_3"}), @ORM\UniqueConstraint(name="descripcion_4", columns={"descripcion_4"}), @ORM\UniqueConstraint(name="descripcion_5", columns={"descripcion_5"}), @ORM\UniqueConstraint(name="descripcion_6", columns={"descripcion_6"})}, indexes={@ORM\Index(name="id_marca", columns={"id_marca"}), @ORM\Index(name="id_familia", columns={"id_familia"})})
+ * @ORM\Table(name="productos", uniqueConstraints={@ORM\UniqueConstraint(name="descripcion", columns={"descripcion"})}, indexes={@ORM\Index(name="id_marca", columns={"id_marca"}), @ORM\Index(name="id_familia", columns={"id_familia"})})
  * @ORM\Entity
  *
  */
@@ -26,44 +26,9 @@ class Productos
     /**
      * @var string
      *
-     * @ORM\Column(name="descripcion_1", type="string", length=50, nullable=false)
+     * @ORM\Column(name="descripcion", type="string", length=50, nullable=false)
      */
-    private $descripcion1;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="descripcion_2", type="string", length=50, nullable=true)
-     */
-    private $descripcion2;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="descripcion_3", type="string", length=50, nullable=true)
-     */
-    private $descripcion3;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="descripcion_4", type="string", length=50, nullable=true)
-     */
-    private $descripcion4;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="descripcion_5", type="string", length=50, nullable=true)
-     */
-    private $descripcion5;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="descripcion_6", type="string", length=50, nullable=true)
-     */
-    private $descripcion6;
+    private $descripcion;
 
     /**
      * @var integer
@@ -155,142 +120,28 @@ class Productos
     }
 
     /**
-     * Set descripcion1
+     * Set descripcion
      *
-     * @param string $descripcion1
+     * @param string $descripcion
      * @return Productos
      */
-    public function setDescripcion1($descripcion1)
+    public function setDescripcion($descripcion)
     {
-        $this->descripcion1 = $descripcion1;
+        $this->descripcion = $descripcion;
 
         return $this;
     }
 
     /**
-     * Get descripcion1
+     * Get descripcion
      *
      * @return string 
      */
-    public function getDescripcion1()
+    public function getDescripcion()
     {
-        return $this->descripcion1;
+        return $this->descripcion;
     }
 
-    /**
-     * Set descripcion2
-     *
-     * @param string $descripcion2
-     * @return Productos
-     */
-    public function setDescripcion2($descripcion2)
-    {
-        $this->descripcion2 = $descripcion2;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion2
-     *
-     * @return string 
-     */
-    public function getDescripcion2()
-    {
-        return $this->descripcion2;
-    }
-
-    /**
-     * Set descripcion3
-     *
-     * @param string $descripcion3
-     * @return Productos
-     */
-    public function setDescripcion3($descripcion3)
-    {
-        $this->descripcion3 = $descripcion3;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion3
-     *
-     * @return string 
-     */
-    public function getDescripcion3()
-    {
-        return $this->descripcion3;
-    }
-
-    /**
-     * Set descripcion4
-     *
-     * @param string $descripcion4
-     * @return Productos
-     */
-    public function setDescripcion4($descripcion4)
-    {
-        $this->descripcion4 = $descripcion4;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion4
-     *
-     * @return string 
-     */
-    public function getDescripcion4()
-    {
-        return $this->descripcion4;
-    }
-
-    /**
-     * Set descripcion5
-     *
-     * @param string $descripcion5
-     * @return Productos
-     */
-    public function setDescripcion5($descripcion5)
-    {
-        $this->descripcion5 = $descripcion5;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion5
-     *
-     * @return string 
-     */
-    public function getDescripcion5()
-    {
-        return $this->descripcion5;
-    }
-
-    /**
-     * Set descripcion6
-     *
-     * @param string $descripcion6
-     * @return Productos
-     */
-    public function setDescripcion6($descripcion6)
-    {
-        $this->descripcion6 = $descripcion6;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion6
-     *
-     * @return string 
-     */
-    public function getDescripcion6()
-    {
-        return $this->descripcion6;
-    }
 
     /**
      * Set ean13
@@ -465,6 +316,6 @@ class Productos
 
     public function __toString()
     {
-        return $this->getDescripcion1();
+        return $this->getDescripcion();
     }
 }

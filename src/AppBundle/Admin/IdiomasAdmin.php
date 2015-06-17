@@ -16,12 +16,7 @@ class IdiomasAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('idioma1')
-            ->add('idioma2')
-            ->add('idioma3')
-            ->add('idioma4')
-            ->add('idioma5')
-            ->add('idioma6')
+            ->add('idioma')
 //            ->add('idIdioma')
         ;
     }
@@ -32,16 +27,10 @@ class IdiomasAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('idioma1')
-            ->add('idioma2')
-            ->add('idioma3')
-            ->add('idioma4')
-            ->add('idioma5')
-            ->add('idioma6')
+            ->add('idioma')
 //            ->add('idIdioma')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,12 +44,7 @@ class IdiomasAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('idioma1')
-            ->add('idioma2')
-            ->add('idioma3')
-            ->add('idioma4')
-            ->add('idioma5')
-            ->add('idioma6')
+            ->add('idioma')
 //            ->add('idIdioma')
         ;
     }
@@ -71,12 +55,7 @@ class IdiomasAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('idioma1')
-            ->add('idioma2')
-            ->add('idioma3')
-            ->add('idioma4')
-            ->add('idioma5')
-            ->add('idioma6')
+            ->add('idioma')
 //            ->add('idIdioma')
         ;
     }

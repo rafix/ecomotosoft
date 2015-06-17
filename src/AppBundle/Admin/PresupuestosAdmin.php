@@ -43,7 +43,6 @@ class PresupuestosAdmin extends Admin
 //            ->add('idPresupuesto')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

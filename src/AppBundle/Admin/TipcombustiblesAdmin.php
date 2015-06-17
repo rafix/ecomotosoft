@@ -16,12 +16,7 @@ class TipcombustiblesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipcombustible1')
-            ->add('tipcombustible2')
-            ->add('tipcombustible3')
-            ->add('tipcombustible4')
-            ->add('tipcombustible5')
-            ->add('tipcombustible6')
+            ->add('tipcombustible')
 //            ->add('idTipcombustible')
         ;
     }
@@ -32,16 +27,10 @@ class TipcombustiblesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipcombustible1')
-            ->add('tipcombustible2')
-            ->add('tipcombustible3')
-            ->add('tipcombustible4')
-            ->add('tipcombustible5')
-            ->add('tipcombustible6')
+            ->add('tipcombustible')
 //            ->add('idTipcombustible')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,12 +44,7 @@ class TipcombustiblesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipcombustible1')
-            ->add('tipcombustible2')
-            ->add('tipcombustible3')
-            ->add('tipcombustible4')
-            ->add('tipcombustible5')
-            ->add('tipcombustible6')
+            ->add('tipcombustible')
 //            ->add('idTipcombustible')
         ;
     }
@@ -71,12 +55,7 @@ class TipcombustiblesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipcombustible1')
-            ->add('tipcombustible2')
-            ->add('tipcombustible3')
-            ->add('tipcombustible4')
-            ->add('tipcombustible5')
-            ->add('tipcombustible6')
+            ->add('tipcombustible')
 //            ->add('idTipcombustible')
         ;
     }

@@ -47,7 +47,6 @@ class ClientesAdmin extends Admin
 //            ->add('idCliente')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

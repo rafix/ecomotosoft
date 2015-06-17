@@ -31,7 +31,6 @@ class Detordenestrabajos1Admin extends Admin
 //            ->add('idDetordentrabajo1')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

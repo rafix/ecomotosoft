@@ -31,7 +31,6 @@ class Detpresupuestos1Admin extends Admin
 //            ->add('idDetpresupuesto1')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

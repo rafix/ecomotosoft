@@ -39,7 +39,6 @@ class IngresosAdmin extends Admin
 //            ->add('idIngreso')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

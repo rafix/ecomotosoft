@@ -17,7 +17,7 @@ class ServiciosAdmin extends Admin
     {
         $datagridMapper
             ->add('referencia')
-            ->add('servicio1')
+            ->add('servicio')
 //            ->add('servicio2')
 //            ->add('servicio3')
 //            ->add('servicio4')
@@ -34,7 +34,7 @@ class ServiciosAdmin extends Admin
     {
         $listMapper
             ->add('referencia')
-            ->add('servicio1')
+            ->add('servicio')
 //            ->add('servicio2')
 //            ->add('servicio3')
 //            ->add('servicio4')
@@ -43,7 +43,6 @@ class ServiciosAdmin extends Admin
 //            ->add('idServicio')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -58,7 +57,7 @@ class ServiciosAdmin extends Admin
     {
         $formMapper
             ->add('referencia')
-            ->add('servicio1')
+            ->add('servicio')
 //            ->add('servicio2')
 //            ->add('servicio3')
 //            ->add('servicio4')
@@ -75,7 +74,7 @@ class ServiciosAdmin extends Admin
     {
         $showMapper
             ->add('referencia')
-            ->add('servicio1')
+            ->add('servicio')
 //            ->add('servicio2')
 //            ->add('servicio3')
 //            ->add('servicio4')

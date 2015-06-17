@@ -16,12 +16,7 @@ class TipaccionesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipaccion1')
-            ->add('tipaccion2')
-            ->add('tipaccion3')
-            ->add('tipaccion4')
-            ->add('tipaccion5')
-            ->add('tipaccion6')
+            ->add('tipaccion')
 //            ->add('idTipaccion')
         ;
     }
@@ -32,16 +27,10 @@ class TipaccionesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipaccion1')
-            ->add('tipaccion2')
-            ->add('tipaccion3')
-            ->add('tipaccion4')
-            ->add('tipaccion5')
-            ->add('tipaccion6')
+            ->add('tipaccion')
 //            ->add('idTipaccion')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,12 +44,7 @@ class TipaccionesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipaccion1')
-            ->add('tipaccion2')
-            ->add('tipaccion3')
-            ->add('tipaccion4')
-            ->add('tipaccion5')
-            ->add('tipaccion6')
+            ->add('tipaccion')
 //            ->add('idTipaccion')
         ;
     }
@@ -71,12 +55,7 @@ class TipaccionesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipaccion1')
-            ->add('tipaccion2')
-            ->add('tipaccion3')
-            ->add('tipaccion4')
-            ->add('tipaccion5')
-            ->add('tipaccion6')
+            ->add('tipaccion')
 //            ->add('idTipaccion')
         ;
     }

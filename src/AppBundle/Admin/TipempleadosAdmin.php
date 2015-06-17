@@ -16,7 +16,7 @@ class TipempleadosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipempleado1')
+            ->add('tipempleado')
 //            ->add('tipempleado2')
 //            ->add('tipempleado3')
 //            ->add('tipempleado4')
@@ -32,7 +32,7 @@ class TipempleadosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipempleado1')
+            ->add('tipempleado')
 //            ->add('tipempleado2')
 //            ->add('tipempleado3')
 //            ->add('tipempleado4')
@@ -41,7 +41,6 @@ class TipempleadosAdmin extends Admin
 //            ->add('idTipempleado')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,7 +54,7 @@ class TipempleadosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipempleado1')
+            ->add('tipempleado')
 //            ->add('tipempleado2')
 //            ->add('tipempleado3')
 //            ->add('tipempleado4')
@@ -71,7 +70,7 @@ class TipempleadosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipempleado1')
+            ->add('tipempleado')
 //            ->add('tipempleado2')
 //            ->add('tipempleado3')
 //            ->add('tipempleado4')

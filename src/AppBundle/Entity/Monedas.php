@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Monedas
  *
- * @ORM\Table(name="monedas", uniqueConstraints={@ORM\UniqueConstraint(name="moneda_1", columns={"moneda_1"}), @ORM\UniqueConstraint(name="moneda_2", columns={"moneda_2"}), @ORM\UniqueConstraint(name="moneda_3", columns={"moneda_3"}), @ORM\UniqueConstraint(name="moneda_4", columns={"moneda_4"}), @ORM\UniqueConstraint(name="moneda_5", columns={"moneda_5"}), @ORM\UniqueConstraint(name="moneda_6", columns={"moneda_6"})})
+ * @ORM\Table(name="monedas", uniqueConstraints={@ORM\UniqueConstraint(name="moneda", columns={"moneda"})})
  * @ORM\Entity
  *
  */
@@ -19,44 +19,9 @@ class Monedas
     /**
      * @var string
      *
-     * @ORM\Column(name="moneda_1", type="string", length=30, nullable=false)
+     * @ORM\Column(name="moneda", type="string", length=30, nullable=false)
      */
-    private $moneda1;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="moneda_2", type="string", length=30, nullable=true)
-     */
-    private $moneda2;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="moneda_3", type="string", length=30, nullable=true)
-     */
-    private $moneda3;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="moneda_4", type="string", length=30, nullable=true)
-     */
-    private $moneda4;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="moneda_5", type="string", length=30, nullable=true)
-     */
-    private $moneda5;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="moneda_6", type="string", length=30, nullable=true)
-     */
-    private $moneda6;
+    private $moneda;
 
     /**
      * @var string
@@ -84,141 +49,26 @@ class Monedas
 
 
     /**
-     * Set moneda1
+     * Set moneda
      *
-     * @param string $moneda1
+     * @param string $moneda
      * @return Monedas
      */
-    public function setMoneda1($moneda1)
+    public function setMoneda($moneda)
     {
-        $this->moneda1 = $moneda1;
+        $this->moneda = $moneda;
 
         return $this;
     }
 
     /**
-     * Get moneda1
+     * Get moneda
      *
      * @return string 
      */
-    public function getMoneda1()
+    public function getMoneda()
     {
-        return $this->moneda1;
-    }
-
-    /**
-     * Set moneda2
-     *
-     * @param string $moneda2
-     * @return Monedas
-     */
-    public function setMoneda2($moneda2)
-    {
-        $this->moneda2 = $moneda2;
-
-        return $this;
-    }
-
-    /**
-     * Get moneda2
-     *
-     * @return string 
-     */
-    public function getMoneda2()
-    {
-        return $this->moneda2;
-    }
-
-    /**
-     * Set moneda3
-     *
-     * @param string $moneda3
-     * @return Monedas
-     */
-    public function setMoneda3($moneda3)
-    {
-        $this->moneda3 = $moneda3;
-
-        return $this;
-    }
-
-    /**
-     * Get moneda3
-     *
-     * @return string 
-     */
-    public function getMoneda3()
-    {
-        return $this->moneda3;
-    }
-
-    /**
-     * Set moneda4
-     *
-     * @param string $moneda4
-     * @return Monedas
-     */
-    public function setMoneda4($moneda4)
-    {
-        $this->moneda4 = $moneda4;
-
-        return $this;
-    }
-
-    /**
-     * Get moneda4
-     *
-     * @return string 
-     */
-    public function getMoneda4()
-    {
-        return $this->moneda4;
-    }
-
-    /**
-     * Set moneda5
-     *
-     * @param string $moneda5
-     * @return Monedas
-     */
-    public function setMoneda5($moneda5)
-    {
-        $this->moneda5 = $moneda5;
-
-        return $this;
-    }
-
-    /**
-     * Get moneda5
-     *
-     * @return string 
-     */
-    public function getMoneda5()
-    {
-        return $this->moneda5;
-    }
-
-    /**
-     * Set moneda6
-     *
-     * @param string $moneda6
-     * @return Monedas
-     */
-    public function setMoneda6($moneda6)
-    {
-        $this->moneda6 = $moneda6;
-
-        return $this;
-    }
-
-    /**
-     * Get moneda6
-     *
-     * @return string 
-     */
-    public function getMoneda6()
-    {
-        return $this->moneda6;
+        return $this->moneda;
     }
 
     /**
@@ -279,6 +129,6 @@ class Monedas
 
     public function __toString()
     {
-        return $this->getMoneda1();
+        return $this->getMoneda();
     }
 }

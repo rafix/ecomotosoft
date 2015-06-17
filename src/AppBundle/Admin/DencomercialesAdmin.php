@@ -31,7 +31,6 @@ class DencomercialesAdmin extends Admin
 //            ->add('idDencomercial')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )

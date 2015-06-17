@@ -16,12 +16,7 @@ class EstadosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('estado1')
-            ->add('estado2')
-            ->add('estado3')
-            ->add('estado4')
-            ->add('estado5')
-            ->add('estado6')
+            ->add('estado')
 //            ->add('idEstado')
         ;
     }
@@ -32,16 +27,10 @@ class EstadosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('estado1')
-            ->add('estado2')
-            ->add('estado3')
-            ->add('estado4')
-            ->add('estado5')
-            ->add('estado6')
+            ->add('estado')
 //            ->add('idEstado')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -55,12 +44,7 @@ class EstadosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('estado1')
-            ->add('estado2')
-            ->add('estado3')
-            ->add('estado4')
-            ->add('estado5')
-            ->add('estado6')
+            ->add('estado')
 //            ->add('idEstado')
         ;
     }
@@ -71,12 +55,7 @@ class EstadosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('estado1')
-            ->add('estado2')
-            ->add('estado3')
-            ->add('estado4')
-            ->add('estado5')
-            ->add('estado6')
+            ->add('estado')
 //            ->add('idEstado')
         ;
     }

@@ -16,7 +16,7 @@ class TipvehiculosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipvehiculo1')
+            ->add('tipvehiculo')
 //            ->add('tipvehiculo2')
 //            ->add('tipvehiculo3')
 //            ->add('tipvehiculo4')
@@ -33,7 +33,7 @@ class TipvehiculosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipvehiculo1')
+            ->add('tipvehiculo')
 //            ->add('tipvehiculo2')
 //            ->add('tipvehiculo3')
 //            ->add('tipvehiculo4')
@@ -43,7 +43,6 @@ class TipvehiculosAdmin extends Admin
 //            ->add('idTipvehiculo')
             ->add('_action', 'actions', array(
                 'actions' => array(
-                    'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
                 )
@@ -57,7 +56,7 @@ class TipvehiculosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipvehiculo1')
+            ->add('tipvehiculo')
 //            ->add('tipvehiculo2')
 //            ->add('tipvehiculo3')
 //            ->add('tipvehiculo4')
@@ -74,7 +73,7 @@ class TipvehiculosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipvehiculo1')
+            ->add('tipvehiculo')
 //            ->add('tipvehiculo2')
 //            ->add('tipvehiculo3')
 //            ->add('tipvehiculo4')

@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Paises
  *
- * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais_1", columns={"pais_1"}), @ORM\UniqueConstraint(name="pais_2", columns={"pais_2"}), @ORM\UniqueConstraint(name="pais_3", columns={"pais_3"}), @ORM\UniqueConstraint(name="pais_4", columns={"pais_4"}), @ORM\UniqueConstraint(name="pais_5", columns={"pais_5"}), @ORM\UniqueConstraint(name="pais_6", columns={"pais_6"}), @ORM\UniqueConstraint(name="bandera", columns={"bandera"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
+ * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais", columns={"pais"}), @ORM\UniqueConstraint(name="bandera", columns={"bandera"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
  * @ORM\Entity
  *
  */
@@ -19,44 +19,9 @@ class Paises
     /**
      * @var string
      *
-     * @ORM\Column(name="pais_1", type="string", length=50, nullable=false)
+     * @ORM\Column(name="pais", type="string", length=50, nullable=false)
      */
-    private $pais1;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pais_2", type="string", length=50, nullable=true)
-     */
-    private $pais2;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pais_3", type="string", length=50, nullable=true)
-     */
-    private $pais3;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pais_4", type="string", length=50, nullable=true)
-     */
-    private $pais4;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pais_5", type="string", length=50, nullable=true)
-     */
-    private $pais5;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pais_6", type="string", length=50, nullable=true)
-     */
-    private $pais6;
+    private $pais;
 
     /**
      * @var string
@@ -97,141 +62,26 @@ class Paises
 
 
     /**
-     * Set pais1
+     * Set pais
      *
-     * @param string $pais1
+     * @param string $pais
      * @return Paises
      */
-    public function setPais1($pais1)
+    public function setPais($pais)
     {
-        $this->pais1 = $pais1;
+        $this->pais1 = $pais;
 
         return $this;
     }
 
     /**
-     * Get pais1
+     * Get pais
      *
      * @return string 
      */
-    public function getPais1()
+    public function getPais()
     {
-        return $this->pais1;
-    }
-
-    /**
-     * Set pais2
-     *
-     * @param string $pais2
-     * @return Paises
-     */
-    public function setPais2($pais2)
-    {
-        $this->pais2 = $pais2;
-
-        return $this;
-    }
-
-    /**
-     * Get pais2
-     *
-     * @return string 
-     */
-    public function getPais2()
-    {
-        return $this->pais2;
-    }
-
-    /**
-     * Set pais3
-     *
-     * @param string $pais3
-     * @return Paises
-     */
-    public function setPais3($pais3)
-    {
-        $this->pais3 = $pais3;
-
-        return $this;
-    }
-
-    /**
-     * Get pais3
-     *
-     * @return string 
-     */
-    public function getPais3()
-    {
-        return $this->pais3;
-    }
-
-    /**
-     * Set pais4
-     *
-     * @param string $pais4
-     * @return Paises
-     */
-    public function setPais4($pais4)
-    {
-        $this->pais4 = $pais4;
-
-        return $this;
-    }
-
-    /**
-     * Get pais4
-     *
-     * @return string 
-     */
-    public function getPais4()
-    {
-        return $this->pais4;
-    }
-
-    /**
-     * Set pais5
-     *
-     * @param string $pais5
-     * @return Paises
-     */
-    public function setPais5($pais5)
-    {
-        $this->pais5 = $pais5;
-
-        return $this;
-    }
-
-    /**
-     * Get pais5
-     *
-     * @return string 
-     */
-    public function getPais5()
-    {
-        return $this->pais5;
-    }
-
-    /**
-     * Set pais6
-     *
-     * @param string $pais6
-     * @return Paises
-     */
-    public function setPais6($pais6)
-    {
-        $this->pais6 = $pais6;
-
-        return $this;
-    }
-
-    /**
-     * Get pais6
-     *
-     * @return string 
-     */
-    public function getPais6()
-    {
-        return $this->pais6;
+        return $this->pais;
     }
 
     /**
@@ -315,6 +165,6 @@ class Paises
 
     public function __toString()
     {
-        return $this->getPais1();
+        return $this->getPais();
     }
 }
