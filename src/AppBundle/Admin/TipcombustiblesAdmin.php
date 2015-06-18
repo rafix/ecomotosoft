@@ -16,8 +16,9 @@ class TipcombustiblesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipcombustible')
-//            ->add('idTipcombustible')
+            ->add('tipcombustible', null, array(
+                'label' => 'Combustible',
+            ))
         ;
     }
 
@@ -27,8 +28,9 @@ class TipcombustiblesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipcombustible')
-//            ->add('idTipcombustible')
+            ->add('tipcombustible', null, array(
+                'label' => 'Combustible',
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -44,8 +46,9 @@ class TipcombustiblesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipcombustible')
-//            ->add('idTipcombustible')
+            ->add('tipcombustible', null, array(
+                'label' => 'Combustible',
+            ))
         ;
     }
 
@@ -55,8 +58,9 @@ class TipcombustiblesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipcombustible')
-//            ->add('idTipcombustible')
+            ->add('tipcombustible', null, array(
+                'label' => 'Combustible',
+            ))
         ;
     }
 }

@@ -37,7 +37,7 @@ class Tipvehiculos
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idTipvehiculo;
+    private $id;
 
 
 
@@ -89,13 +89,13 @@ class Tipvehiculos
     }
 
     /**
-     * Get idTipvehiculo
+     * Get id
      *
      * @return integer 
      */
-    public function getIdTipvehiculo()
+    public function getId()
     {
-        return $this->idTipvehiculo;
+        return $this->id;
     }
 
     public function __toString()

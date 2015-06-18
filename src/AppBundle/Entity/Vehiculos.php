@@ -79,7 +79,7 @@ class Vehiculos
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idVehiculo;
+    private $id;
 
     /**
      * @var \AppBundle\Entity\Modelos
@@ -89,7 +89,7 @@ class Vehiculos
      *   @ORM\JoinColumn(name="id_modelo", referencedColumnName="id_modelo")
      * })
      */
-    private $idModelo;
+    private $modelo;
 
     /**
      * @var \AppBundle\Entity\Clientes
@@ -99,7 +99,7 @@ class Vehiculos
      *   @ORM\JoinColumn(name="id_cliente", referencedColumnName="id_cliente")
      * })
      */
-    private $idCliente;
+    private $cliente;
 
     /**
      * @var \AppBundle\Entity\Paises
@@ -109,7 +109,7 @@ class Vehiculos
      *   @ORM\JoinColumn(name="id_pais", referencedColumnName="id_pais")
      * })
      */
-    private $idPais;
+    private $pais;
 
 
 
@@ -298,82 +298,82 @@ class Vehiculos
     }
 
     /**
-     * Get idVehiculo
+     * Get id
      *
      * @return integer 
      */
-    public function getIdVehiculo()
+    public function getId()
     {
-        return $this->idVehiculo;
+        return $this->id;
     }
 
     /**
-     * Set idModelo
+     * Set modelo
      *
-     * @param \AppBundle\Entity\Modelos $idModelo
+     * @param \AppBundle\Entity\Modelos $modelo
      * @return Vehiculos
      */
-    public function setIdModelo(\AppBundle\Entity\Modelos $idModelo = null)
+    public function setModelo(\AppBundle\Entity\Modelos $modelo = null)
     {
-        $this->idModelo = $idModelo;
+        $this->modelo = $modelo;
 
         return $this;
     }
 
     /**
-     * Get idModelo
+     * Get modelo
      *
      * @return \AppBundle\Entity\Modelos 
      */
-    public function getIdModelo()
+    public function getModelo()
     {
-        return $this->idModelo;
+        return $this->modelo;
     }
 
     /**
-     * Set idCliente
+     * Set cliente
      *
-     * @param \AppBundle\Entity\Clientes $idCliente
+     * @param \AppBundle\Entity\Clientes $cliente
      * @return Vehiculos
      */
-    public function setIdCliente(\AppBundle\Entity\Clientes $idCliente = null)
+    public function setCliente(\AppBundle\Entity\Clientes $cliente = null)
     {
-        $this->idCliente = $idCliente;
+        $this->cliente = $cliente;
 
         return $this;
     }
 
     /**
-     * Get idCliente
+     * Get cliente
      *
      * @return \AppBundle\Entity\Clientes 
      */
-    public function getIdCliente()
+    public function getCliente()
     {
-        return $this->idCliente;
+        return $this->cliente;
     }
 
     /**
-     * Set idPais
+     * Set pais
      *
-     * @param \AppBundle\Entity\Paises $idPais
+     * @param \AppBundle\Entity\Paises $pais
      * @return Vehiculos
      */
-    public function setIdPais(\AppBundle\Entity\Paises $idPais = null)
+    public function setPais(\AppBundle\Entity\Paises $pais = null)
     {
-        $this->idPais = $idPais;
+        $this->pais = $pais;
 
         return $this;
     }
 
     /**
-     * Get idPais
+     * Get pais
      *
      * @return \AppBundle\Entity\Paises 
      */
-    public function getIdPais()
+    public function getPais()
     {
-        return $this->idPais;
+        return $this->pais;
     }
 
     public function __toString()

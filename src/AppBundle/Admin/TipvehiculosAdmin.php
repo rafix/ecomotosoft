@@ -16,14 +16,12 @@ class TipvehiculosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('tipvehiculo')
-//            ->add('tipvehiculo2')
-//            ->add('tipvehiculo3')
-//            ->add('tipvehiculo4')
-//            ->add('tipvehiculo5')
-//            ->add('tipvehiculo6')
-            ->add('clasificacion')
-//            ->add('idTipvehiculo')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('clasificacion', null, array(
+                'label' => 'Clasificación'
+            ))
         ;
     }
 
@@ -33,14 +31,12 @@ class TipvehiculosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('tipvehiculo')
-//            ->add('tipvehiculo2')
-//            ->add('tipvehiculo3')
-//            ->add('tipvehiculo4')
-//            ->add('tipvehiculo5')
-//            ->add('tipvehiculo6')
-            ->add('clasificacion')
-//            ->add('idTipvehiculo')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('clasificacion', null, array(
+                'label' => 'Clasificación'
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -56,14 +52,12 @@ class TipvehiculosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('tipvehiculo')
-//            ->add('tipvehiculo2')
-//            ->add('tipvehiculo3')
-//            ->add('tipvehiculo4')
-//            ->add('tipvehiculo5')
-//            ->add('tipvehiculo6')
-            ->add('clasificacion')
-//            ->add('idTipvehiculo')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('clasificacion', null, array(
+                'label' => 'Clasificación'
+            ))
         ;
     }
 
@@ -73,14 +67,12 @@ class TipvehiculosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('tipvehiculo')
-//            ->add('tipvehiculo2')
-//            ->add('tipvehiculo3')
-//            ->add('tipvehiculo4')
-//            ->add('tipvehiculo5')
-//            ->add('tipvehiculo6')
-            ->add('clasificacion')
-//            ->add('idTipvehiculo')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('clasificacion', null, array(
+                'label' => 'Clasificación'
+            ))
         ;
     }
 }

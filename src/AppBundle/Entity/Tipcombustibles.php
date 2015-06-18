@@ -30,7 +30,7 @@ class Tipcombustibles
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idTipcombustible;
+    private $id;
 
 
 
@@ -63,9 +63,9 @@ class Tipcombustibles
      *
      * @return integer 
      */
-    public function getIdTipcombustible()
+    public function getId()
     {
-        return $this->idTipcombustible;
+        return $this->id;
     }
 
     public function __toString()

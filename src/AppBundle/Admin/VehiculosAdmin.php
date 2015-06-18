@@ -16,15 +16,35 @@ class VehiculosAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('matricula')
-            ->add('numbastidor')
-            ->add('fecmatriculacion')
-            ->add('fecfabricacion')
-            ->add('fecitv')
-            ->add('fecmantenimiento')
-            ->add('fictecnica')
-            ->add('percirculacion')
-//            ->add('idVehiculo')
+            ->add('matricula', null, array(
+                'label' => 'Matrícula',
+            ))
+            ->add('numbastidor', null, array(
+                'label' => 'Número del Bastidor',
+            ))
+            ->add('fecmatriculacion', null, array(
+                'label' => 'Fecha de Matriculación',
+            ))
+            ->add('fecfabricacion', null, array(
+                'label' => 'Fecha de Fabricación',
+            ))
+            ->add('fecitv', null, array(
+                'label' => 'Fecha ITV',
+            ))
+            ->add('fecmantenimiento', null, array(
+                'label' => 'Fecha de Mantenimiento',
+            ))
+            ->add('fictecnica', null, array(
+                'label' => 'Ficha Técnica',
+            ))
+            ->add('percirculacion', null, array(
+                'label' => 'Permiso de Circulación',
+            ))
+            ->add('modelo')
+            ->add('cliente')
+            ->add('pais', null, array(
+                'label' => 'País'
+            ))
         ;
     }
 
@@ -34,15 +54,35 @@ class VehiculosAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('matricula')
-            ->add('numbastidor')
-            ->add('fecmatriculacion')
-            ->add('fecfabricacion')
-            ->add('fecitv')
-            ->add('fecmantenimiento')
-            ->add('fictecnica')
-            ->add('percirculacion')
-//            ->add('idVehiculo')
+            ->add('matricula', null, array(
+                'label' => 'Matrícula',
+            ))
+//            ->add('numbastidor', null, array(
+//                'label' => 'Número del Bastidor',
+//            ))
+//            ->add('fecmatriculacion', null, array(
+//                'label' => 'Fecha de Matriculación',
+//            ))
+//            ->add('fecfabricacion', null, array(
+//                'label' => 'Fecha de Fabricación',
+//            ))
+//            ->add('fecitv', null, array(
+//                'label' => 'Fecha ITV',
+//            ))
+//            ->add('fecmantenimiento', null, array(
+//                'label' => 'Fecha de Mantenimiento',
+//            ))
+//            ->add('fictecnica', null, array(
+//                'label' => 'Ficha Técnica',
+//            ))
+//            ->add('percirculacion', null, array(
+//                'label' => 'Permiso de Circulación',
+//            ))
+            ->add('modelo')
+            ->add('cliente')
+            ->add('pais', null, array(
+                'label' => 'País'
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -58,15 +98,35 @@ class VehiculosAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('matricula')
-            ->add('numbastidor')
-            ->add('fecmatriculacion')
-            ->add('fecfabricacion')
-            ->add('fecitv')
-            ->add('fecmantenimiento')
-            ->add('fictecnica')
-            ->add('percirculacion')
-//            ->add('idVehiculo')
+            ->add('matricula', null, array(
+                'label' => 'Matrícula',
+            ))
+            ->add('numbastidor', null, array(
+                'label' => 'Número del Bastidor',
+            ))
+            ->add('fecmatriculacion', 'sonata_type_date_picker', array(
+                'label' => 'Fecha de Matriculación',
+            ))
+            ->add('fecfabricacion', 'sonata_type_date_picker', array(
+                'label' => 'Fecha de Fabricación',
+            ))
+            ->add('fecitv', 'sonata_type_date_picker', array(
+                'label' => 'Fecha ITV',
+            ))
+            ->add('fecmantenimiento', 'sonata_type_datetime_picker', array(
+                'label' => 'Fecha de Mantenimiento',
+            ))
+            ->add('fictecnica', null, array(
+                'label' => 'Ficha Técnica',
+            ))
+            ->add('percirculacion', null, array(
+                'label' => 'Permiso de Circulación',
+            ))
+            ->add('modelo')
+            ->add('cliente')
+            ->add('pais', null, array(
+                'label' => 'País',
+            ))
         ;
     }
 
@@ -76,15 +136,35 @@ class VehiculosAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('matricula')
-            ->add('numbastidor')
-            ->add('fecmatriculacion')
-            ->add('fecfabricacion')
-            ->add('fecitv')
-            ->add('fecmantenimiento')
-            ->add('fictecnica')
-            ->add('percirculacion')
-//            ->add('idVehiculo')
+            ->add('matricula', null, array(
+                'label' => 'Matrícula',
+            ))
+            ->add('numbastidor', null, array(
+                'label' => 'Número del Bastidor',
+            ))
+            ->add('fecmatriculacion', null, array(
+                'label' => 'Fecha de Matriculación',
+            ))
+            ->add('fecfabricacion', null, array(
+                'label' => 'Fecha de Fabricación',
+            ))
+            ->add('fecitv', null, array(
+                'label' => 'Fecha ITV',
+            ))
+            ->add('fecmantenimiento', null, array(
+                'label' => 'Fecha de Mantenimiento',
+            ))
+            ->add('fictecnica', null, array(
+                'label' => 'Ficha Técnica',
+            ))
+            ->add('percirculacion', null, array(
+                'label' => 'Permiso de Circulación',
+            ))
+            ->add('modelo')
+            ->add('cliente')
+            ->add('pais', null, array(
+                'label' => 'País'
+            ))
         ;
     }
 }
