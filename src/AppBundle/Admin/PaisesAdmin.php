@@ -19,7 +19,8 @@ class PaisesAdmin extends Admin
             ->add('pais', null, array(
                 'label' => 'País'
             ))
-//            ->add('idPais')
+            ->add('impuesto')
+            ->add('moneda')
         ;
     }
 
@@ -32,6 +33,8 @@ class PaisesAdmin extends Admin
             ->add('pais', null, array(
                 'label' => 'País'
             ))
+            ->add('impuesto')
+            ->add('moneda')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -50,7 +53,8 @@ class PaisesAdmin extends Admin
             ->add('pais', null, array(
                 'label' => 'País'
             ))
-//            ->add('idPais')
+            ->add('impuesto')
+            ->add('moneda')
         ;
     }
 
@@ -61,7 +65,8 @@ class PaisesAdmin extends Admin
     {
         $showMapper
             ->add('pais')
-//            ->add('idPais')
+            ->add('impuesto')
+            ->add('moneda')
         ;
     }
 }

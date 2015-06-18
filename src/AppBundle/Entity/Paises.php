@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Paises
  *
- * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais", columns={"pais"})}, indexes={@ORM\Index(name="id_moneda", columns={"id_moneda"}), @ORM\Index(name="id_impuesto", columns={"id_impuesto"})})
+ * @ORM\Table(name="paises", uniqueConstraints={@ORM\UniqueConstraint(name="pais", columns={"pais"})}, indexes={@ORM\Index(name="moneda", columns={"id_moneda"}), @ORM\Index(name="impuesto", columns={"id_impuesto"})})
  * @ORM\Entity
  *
  */
@@ -116,7 +116,7 @@ class Paises
      * @param \AppBundle\Entity\Monedas $moneda
      * @return Paises
      */
-    public function setIdMoneda(\AppBundle\Entity\Monedas $moneda = null)
+    public function setMoneda(\AppBundle\Entity\Monedas $moneda = null)
     {
         $this->moneda = $moneda;
 
@@ -128,7 +128,7 @@ class Paises
      *
      * @return \AppBundle\Entity\Monedas 
      */
-    public function getIdMoneda()
+    public function getMoneda()
     {
         return $this->moneda;
     }
