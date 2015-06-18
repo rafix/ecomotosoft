@@ -37,7 +37,7 @@ class Servicios
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idServicio;
+    private $id;
 
 
 
@@ -88,13 +88,13 @@ class Servicios
     }
 
     /**
-     * Get idServicio
+     * Get id
      *
      * @return integer 
      */
-    public function getIdServicio()
+    public function getId()
     {
-        return $this->idServicio;
+        return $this->id;
     }
 
     public function __toString()
