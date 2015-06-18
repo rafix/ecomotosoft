@@ -44,7 +44,7 @@ class Fabricantes
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idFabricante;
+    private $id;
 
 
 
@@ -118,13 +118,13 @@ class Fabricantes
     }
 
     /**
-     * Get idFabricante
+     * Get id
      *
      * @return integer 
      */
-    public function getIdFabricante()
+    public function getId()
     {
-        return $this->idFabricante;
+        return $this->id;
     }
 
     public function __toString()

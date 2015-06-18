@@ -30,7 +30,7 @@ class Dencomerciales
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idDencomercial;
+    private $id;
 
     /**
      * @var \AppBundle\Entity\Fabricantes
@@ -40,7 +40,7 @@ class Dencomerciales
      *   @ORM\JoinColumn(name="id_fabricante", referencedColumnName="id_fabricante")
      * })
      */
-    private $idFabricante;
+    private $fabricante;
 
 
 
@@ -68,24 +68,24 @@ class Dencomerciales
     }
 
     /**
-     * Get idDencomercial
+     * Get id
      *
      * @return integer 
      */
-    public function getIdDencomercial()
+    public function getId()
     {
-        return $this->idDencomercial;
+        return $this->id;
     }
 
     /**
-     * Set idFabricante
+     * Set fabricante
      *
-     * @param \AppBundle\Entity\Fabricantes $idFabricante
+     * @param \AppBundle\Entity\Fabricantes $fabricante
      * @return Dencomerciales
      */
-    public function setIdFabricante(\AppBundle\Entity\Fabricantes $idFabricante = null)
+    public function setFabricante(\AppBundle\Entity\Fabricantes $fabricante = null)
     {
-        $this->idFabricante = $idFabricante;
+        $this->fabricante = $fabricante;
 
         return $this;
     }
@@ -95,9 +95,9 @@ class Dencomerciales
      *
      * @return \AppBundle\Entity\Fabricantes 
      */
-    public function getIdFabricante()
+    public function getFabricante()
     {
-        return $this->idFabricante;
+        return $this->fabricante;
     }
 
     public function __toString()

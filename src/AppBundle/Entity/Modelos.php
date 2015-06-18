@@ -184,7 +184,7 @@ class Modelos
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idModelo;
+    private $id;
 
     /**
      * @var \AppBundle\Entity\Tipcombustibles
@@ -194,7 +194,7 @@ class Modelos
      *   @ORM\JoinColumn(name="id_tipcombustible", referencedColumnName="id_tipcombustible")
      * })
      */
-    private $idTipcombustible;
+    private $combustible;
 
     /**
      * @var \AppBundle\Entity\Fabricantes
@@ -204,7 +204,7 @@ class Modelos
      *   @ORM\JoinColumn(name="id_fabricante", referencedColumnName="id_fabricante")
      * })
      */
-    private $idFabricante;
+    private $fabricante;
 
     /**
      * @var \AppBundle\Entity\Tipvehiculos
@@ -214,7 +214,7 @@ class Modelos
      *   @ORM\JoinColumn(name="id_tipvehiculo", referencedColumnName="id_tipvehiculo")
      * })
      */
-    private $idTipvehiculo;
+    private $tipvehiculo;
 
     /**
      * @var \AppBundle\Entity\Dencomerciales
@@ -224,7 +224,7 @@ class Modelos
      *   @ORM\JoinColumn(name="id_dencomercial", referencedColumnName="id_dencomercial")
      * })
      */
-    private $idDencomercial;
+    private $dencomercial;
 
 
 
@@ -758,105 +758,105 @@ class Modelos
     }
 
     /**
-     * Get idModelo
+     * Get id
      *
      * @return integer 
      */
-    public function getIdModelo()
+    public function getId()
     {
-        return $this->idModelo;
+        return $this->id;
     }
 
     /**
-     * Set idTipcombustible
+     * Set combustible
      *
-     * @param \AppBundle\Entity\Tipcombustibles $idTipcombustible
+     * @param \AppBundle\Entity\Tipcombustibles $combustible
      * @return Modelos
      */
-    public function setIdTipcombustible(\AppBundle\Entity\Tipcombustibles $idTipcombustible = null)
+    public function setCombustible(\AppBundle\Entity\Tipcombustibles $combustible = null)
     {
-        $this->idTipcombustible = $idTipcombustible;
+        $this->combustible = $combustible;
 
         return $this;
     }
 
     /**
-     * Get idTipcombustible
+     * Get combustible
      *
      * @return \AppBundle\Entity\Tipcombustibles 
      */
-    public function getIdTipcombustible()
+    public function getCombustible()
     {
-        return $this->idTipcombustible;
+        return $this->combustible;
     }
 
     /**
-     * Set idFabricante
+     * Set fabricante
      *
-     * @param \AppBundle\Entity\Fabricantes $idFabricante
+     * @param \AppBundle\Entity\Fabricantes $fabricante
      * @return Modelos
      */
-    public function setIdFabricante(\AppBundle\Entity\Fabricantes $idFabricante = null)
+    public function setFabricante(\AppBundle\Entity\Fabricantes $fabricante = null)
     {
-        $this->idFabricante = $idFabricante;
+        $this->fabricante = $fabricante;
 
         return $this;
     }
 
     /**
-     * Get idFabricante
+     * Get fabricante
      *
      * @return \AppBundle\Entity\Fabricantes 
      */
-    public function getIdFabricante()
+    public function getFabricante()
     {
-        return $this->idFabricante;
+        return $this->fabricante;
     }
 
     /**
-     * Set idTipvehiculo
+     * Set tipvehiculo
      *
-     * @param \AppBundle\Entity\Tipvehiculos $idTipvehiculo
+     * @param \AppBundle\Entity\Tipvehiculos $tipvehiculo
      * @return Modelos
      */
-    public function setIdTipvehiculo(\AppBundle\Entity\Tipvehiculos $idTipvehiculo = null)
+    public function setTipvehiculo(\AppBundle\Entity\Tipvehiculos $tipvehiculo = null)
     {
-        $this->idTipvehiculo = $idTipvehiculo;
+        $this->tipvehiculo = $tipvehiculo;
 
         return $this;
     }
 
     /**
-     * Get idTipvehiculo
+     * Get tipvehiculo
      *
      * @return \AppBundle\Entity\Tipvehiculos 
      */
-    public function getIdTipvehiculo()
+    public function getTipvehiculo()
     {
-        return $this->idTipvehiculo;
+        return $this->tipvehiculo;
     }
 
     /**
-     * Set idDencomercial
+     * Set dencomercial
      *
-     * @param \AppBundle\Entity\Dencomerciales $idDencomercial
+     * @param \AppBundle\Entity\Dencomerciales $dencomercial
      * @return Modelos
      */
-    public function setIdDencomercial(\AppBundle\Entity\Dencomerciales $idDencomercial = null)
+    public function setDencomercial(\AppBundle\Entity\Dencomerciales $dencomercial = null)
     {
-        $this->idDencomercial = $idDencomercial;
+        $this->dencomercial = $dencomercial;
 
         return $this;
     }
 
     /**
-     * Get idDencomercial
+     * Get dencomercial
      *
      * @return \AppBundle\Entity\Dencomerciales 
      */
-    public function getIdDencomercial()
+    public function getDencomercial()
     {
-        return $this->idDencomercial;
+        return $this->dencomercial;
     }
 
     public function __toString()

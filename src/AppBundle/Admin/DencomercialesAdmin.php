@@ -16,8 +16,10 @@ class DencomercialesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('dencomercial')
-//            ->add('idDencomercial')
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
+            ->add('fabricante')
         ;
     }
 
@@ -27,8 +29,10 @@ class DencomercialesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('dencomercial')
-//            ->add('idDencomercial')
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
+            ->add('fabricante')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -44,8 +48,10 @@ class DencomercialesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('dencomercial')
-//            ->add('idDencomercial')
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
+            ->add('fabricante')
         ;
     }
 
@@ -55,8 +61,10 @@ class DencomercialesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('dencomercial')
-//            ->add('idDencomercial')
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
+            ->add('fabricante')
         ;
     }
 }

@@ -17,29 +17,56 @@ class ModelosAdmin extends Admin
     {
         $datagridMapper
             ->add('modelo')
-            ->add('ano')
+            ->add('ano', null, array(
+                'label' => 'Año'
+            ))
             ->add('cilindrada')
-            ->add('homologacion')
+            ->add('homologacion', null, array(
+                'label' => 'Homologación'
+            ))
             ->add('tipo')
             ->add('variante')
-            ->add('codmotor')
-            ->add('numcilindros')
+            ->add('codmotor', null, array(
+                'label' => 'Código del Motor'
+            ))
+            ->add('numcilindros', null, array(
+                'label' => 'Número de Cilindros'
+            ))
             ->add('potencia')
-            ->add('db')
-            ->add('rpm')
+            ->add('db', null, array(
+                'label' => 'DB'
+            ))
+            ->add('rpm', null, array(
+                'label' => 'RPM'
+            ))
             ->add('distancia')
             ->add('tara')
-            ->add('mma')
+            ->add('mma', null, array(
+                'label' => 'MMA'
+            ))
             ->add('asientos')
-            ->add('neumaticos')
+            ->add('neumaticos', null, array(
+                'label' => 'Neumáticos'
+            ))
             ->add('altura')
             ->add('anchura')
             ->add('longitud')
             ->add('batalla')
-            ->add('viaanterior')
-            ->add('viaposterior')
+            ->add('viaanterior', null, array(
+                'label' => 'Vía Anterior'
+            ))
+            ->add('viaposterior', null, array(
+                'label' => 'Vía Posterior'
+            ))
             ->add('limiteco')
-//            ->add('idModelo')
+            ->add('combustible')
+            ->add('fabricante')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
         ;
     }
 
@@ -50,35 +77,56 @@ class ModelosAdmin extends Admin
     {
         $listMapper
             ->add('modelo')
-            ->add('ano')
-            ->add('cilindrada')
-            ->add('homologacion')
-            ->add('tipo')
-            ->add('variante')
-            ->add('codmotor')
-            ->add('numcilindros')
-            ->add('potencia')
-            ->add('db')
-            ->add('rpm')
-            ->add('distancia')
-            ->add('tara')
-            ->add('mma')
-            ->add('asientos')
-            ->add('neumaticos')
-            ->add('altura')
-            ->add('anchura')
-            ->add('longitud')
-            ->add('batalla')
-            ->add('viaanterior')
-            ->add('viaposterior')
-            ->add('limiteco')
-//            ->add('idModelo')
-            ->add('_action', 'actions', array(
-                'actions' => array(
-                    'edit' => array(),
-                    'delete' => array(),
-                )
+            ->add('ano', null, array(
+                'label' => 'Año'
             ))
+//            ->add('cilindrada')
+//            ->add('homologacion', null, array(
+//                'label' => 'Homologación'
+//            ))
+            ->add('tipo')
+//            ->add('variante')
+//            ->add('codmotor', null, array(
+//                'label' => 'Código del Motor'
+//            ))
+//            ->add('numcilindros', null, array(
+//                'label' => 'Número de Cilindros'
+//            ))
+//            ->add('potencia')
+//            ->add('db', null, array(
+//                'label' => 'DB'
+//            ))
+//            ->add('rpm', null, array(
+//                'label' => 'RPM'
+//            ))
+//            ->add('distancia')
+//            ->add('tara')
+//            ->add('mma', null, array(
+//                'label' => 'MMA'
+//            ))
+//            ->add('asientos')
+//            ->add('neumaticos', null, array(
+//                'label' => 'Neumáticos'
+//            ))
+//            ->add('altura')
+//            ->add('anchura')
+//            ->add('longitud')
+//            ->add('batalla')
+//            ->add('viaanterior', null, array(
+//                'label' => 'Vía Anterior'
+//            ))
+//            ->add('viaposterior', null, array(
+//                'label' => 'Vía Posterior'
+//            ))
+//            ->add('limiteco')
+            ->add('combustible')
+            ->add('fabricante')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+//            ->add('dencomercial', null, array(
+//                'label' => 'Denominación Comercial'
+//            ))
         ;
     }
 
@@ -89,29 +137,56 @@ class ModelosAdmin extends Admin
     {
         $formMapper
             ->add('modelo')
-            ->add('ano')
+            ->add('ano', null, array(
+                'label' => 'Año'
+            ))
             ->add('cilindrada')
-            ->add('homologacion')
+            ->add('homologacion', null, array(
+                'label' => 'Homologación'
+            ))
             ->add('tipo')
             ->add('variante')
-            ->add('codmotor')
-            ->add('numcilindros')
+            ->add('codmotor', null, array(
+                'label' => 'Código del Motor'
+            ))
+            ->add('numcilindros', null, array(
+                'label' => 'Número de Cilindros'
+            ))
             ->add('potencia')
-            ->add('db')
-            ->add('rpm')
+            ->add('db', null, array(
+                'label' => 'DB'
+            ))
+            ->add('rpm', null, array(
+                'label' => 'RPM'
+            ))
             ->add('distancia')
             ->add('tara')
-            ->add('mma')
+            ->add('mma', null, array(
+                'label' => 'MMA'
+            ))
             ->add('asientos')
-            ->add('neumaticos')
+            ->add('neumaticos', null, array(
+                'label' => 'Neumáticos'
+            ))
             ->add('altura')
             ->add('anchura')
             ->add('longitud')
             ->add('batalla')
-            ->add('viaanterior')
-            ->add('viaposterior')
+            ->add('viaanterior', null, array(
+                'label' => 'Vía Anterior'
+            ))
+            ->add('viaposterior', null, array(
+                'label' => 'Vía Posterior'
+            ))
             ->add('limiteco')
-//            ->add('idModelo')
+            ->add('combustible')
+            ->add('fabricante')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
         ;
     }
 
@@ -122,29 +197,56 @@ class ModelosAdmin extends Admin
     {
         $showMapper
             ->add('modelo')
-            ->add('ano')
+            ->add('ano', null, array(
+                'label' => 'Año'
+            ))
             ->add('cilindrada')
-            ->add('homologacion')
+            ->add('homologacion', null, array(
+                'label' => 'Homologación'
+            ))
             ->add('tipo')
             ->add('variante')
-            ->add('codmotor')
-            ->add('numcilindros')
+            ->add('codmotor', null, array(
+                'label' => 'Código del Motor'
+            ))
+            ->add('numcilindros', null, array(
+                'label' => 'Número de Cilindros'
+            ))
             ->add('potencia')
-            ->add('db')
-            ->add('rpm')
+            ->add('db', null, array(
+                'label' => 'DB'
+            ))
+            ->add('rpm', null, array(
+                'label' => 'RPM'
+            ))
             ->add('distancia')
             ->add('tara')
-            ->add('mma')
+            ->add('mma', null, array(
+                'label' => 'MMA'
+            ))
             ->add('asientos')
-            ->add('neumaticos')
+            ->add('neumaticos', null, array(
+                'label' => 'Neumáticos'
+            ))
             ->add('altura')
             ->add('anchura')
             ->add('longitud')
             ->add('batalla')
-            ->add('viaanterior')
-            ->add('viaposterior')
+            ->add('viaanterior', null, array(
+                'label' => 'Vía Anterior'
+            ))
+            ->add('viaposterior', null, array(
+                'label' => 'Vía Posterior'
+            ))
             ->add('limiteco')
-//            ->add('idModelo')
+            ->add('combustible')
+            ->add('fabricante')
+            ->add('tipvehiculo', null, array(
+                'label' => 'Tipo de Vehículo'
+            ))
+            ->add('dencomercial', null, array(
+                'label' => 'Denominación Comercial'
+            ))
         ;
     }
 }
