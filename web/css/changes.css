@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'm100';
+    src:url('../fonts/MuseoSans-100.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@charset "UTF-8";
+
+
+body {
+	background-color: #3fa8e9;
+}
+
+.mypicture {
+	vertical-align: middle;
+    width: 120px;
+    overflow: hidden; 
+    border-radius: 50%;
+    margin-top: -60px
+}
+
+
+
+.myheadline {
+    margin-top: -25px;
+    vertical-align: middle;
+    text-align: center;
+	color: #2d4963;
+	font-family: m100;
+	font-size: 16pt
+}
+
+
+.mywebsite {
+	
+    margin-top: 20px;
+    vertical-align: middle;
+    text-align: center;
+	color: #ffffff;
+	font-family: m100;
+	font-size: 50pt
+}
+
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 0px;
+}
+
+footer{
+	background-color: #2d4963;
+	padding-top: 20px;
+	height: 60px;
+	text-align: center
+	
+}
+
+footer a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+
+.footerstyle {
+    
+	color: #fff;
+	font-family: m100;
+	font-size: 12px;
+	text-decoration: none;
+	margin-top: 0px;
+}
+
+@media (max-width: 500px) { 
+	.mywebsite {
+		font-size: 40pt;
+	}
+	
+	.myheadline {
+	padding-top: 10px;
+		line-height: 15pt;
+	}
+}
+
+
+
+
+
+
+

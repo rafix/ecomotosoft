@@ -51,7 +51,7 @@ class Marcas
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idMarca;
+    private $id;
 
 
 
@@ -148,13 +148,13 @@ class Marcas
     }
 
     /**
-     * Get idMarca
+     * Get id
      *
      * @return integer 
      */
-    public function getIdMarca()
+    public function getId()
     {
-        return $this->idMarca;
+        return $this->id;
     }
 
     public function __toString()
