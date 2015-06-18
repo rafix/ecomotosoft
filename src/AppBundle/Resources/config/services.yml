@@ -33,7 +33,7 @@ services:
         class: AppBundle\Admin\DencomercialesAdmin
         arguments: [~, AppBundle\Entity\Dencomerciales, AppBundle:DencomercialesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Den. comerciales}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Den. Comerciales}
 
     app.admin.modelos:
         class: AppBundle\Admin\ModelosAdmin
@@ -135,7 +135,7 @@ services:
         class: AppBundle\Admin\EntradasosalidasAdmin
         arguments: [~, AppBundle\Entity\Entradasosalidas, AppBundle:EntradasosalidasAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Entradasosalidas}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Entradas o Salidas}
 
     app.admin.estados:
         class: AppBundle\Admin\EstadosAdmin
@@ -177,7 +177,7 @@ services:
         class: AppBundle\Admin\OrdenestrabajosAdmin
         arguments: [~, AppBundle\Entity\Ordenestrabajos, AppBundle:OrdenestrabajosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Ordenestrabajos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Ordenes de Trabajos}
 
     app.admin.presupuestos:
         class: AppBundle\Admin\PresupuestosAdmin
@@ -189,52 +189,52 @@ services:
         class: AppBundle\Admin\TipaccionesAdmin
         arguments: [~, AppBundle\Entity\Tipacciones, AppBundle:TipaccionesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipacciones}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Acciones}
 
     app.admin.tipclientes:
         class: AppBundle\Admin\TipclientesAdmin
         arguments: [~, AppBundle\Entity\Tipclientes, AppBundle:TipclientesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipclientes}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Clientes}
 
     app.admin.tipcombustibles:
         class: AppBundle\Admin\TipcombustiblesAdmin
         arguments: [~, AppBundle\Entity\Tipcombustibles, AppBundle:TipcombustiblesAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipcombustibles}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Combustibles}
 
     app.admin.tipcontactos:
         class: AppBundle\Admin\TipcontactosAdmin
         arguments: [~, AppBundle\Entity\Tipcontactos, AppBundle:TipcontactosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipcontactos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Contactos}
 
     app.admin.tipempleados:
         class: AppBundle\Admin\TipempleadosAdmin
         arguments: [~, AppBundle\Entity\Tipempleados, AppBundle:TipempleadosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipempleados}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Empleados}
 
     app.admin.tipingresos:
         class: AppBundle\Admin\TipingresosAdmin
         arguments: [~, AppBundle\Entity\Tipingresos, AppBundle:TipingresosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipingresos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Ingresos}
 
     app.admin.tippagos:
         class: AppBundle\Admin\TippagosAdmin
         arguments: [~, AppBundle\Entity\Tippagos, AppBundle:TippagosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tippagos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Pagos}
 
     app.admin.tipvehiculos:
         class: AppBundle\Admin\TipvehiculosAdmin
         arguments: [~, AppBundle\Entity\Tipvehiculos, AppBundle:TipvehiculosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipvehiculos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipo de Vehículos}
 
     app.admin.vehiculos:
         class: AppBundle\Admin\VehiculosAdmin
         arguments: [~, AppBundle\Entity\Vehiculos, AppBundle:VehiculosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Vehiculos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Vehículos}
