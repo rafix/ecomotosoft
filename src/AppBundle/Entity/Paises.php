@@ -30,7 +30,7 @@ class Paises
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idPais;
+    private $id;
 
     /**
      * @var \AppBundle\Entity\Impuestos
@@ -40,7 +40,7 @@ class Paises
      *   @ORM\JoinColumn(name="id_impuesto", referencedColumnName="id_impuesto")
      * })
      */
-    private $idImpuesto;
+    private $impuesto;
 
     /**
      * @var \AppBundle\Entity\Monedas
@@ -50,7 +50,7 @@ class Paises
      *   @ORM\JoinColumn(name="id_moneda", referencedColumnName="id_moneda")
      * })
      */
-    private $idMoneda;
+    private $moneda;
 
 
 
@@ -78,59 +78,59 @@ class Paises
     }
 
     /**
-     * Get idPais
+     * Get id
      *
      * @return integer 
      */
-    public function getIdPais()
+    public function getId()
     {
-        return $this->idPais;
+        return $this->id;
     }
 
     /**
-     * Set idImpuesto
+     * Set impuesto
      *
-     * @param \AppBundle\Entity\Impuestos $idImpuesto
+     * @param \AppBundle\Entity\Impuestos $impuesto
      * @return Paises
      */
-    public function setIdImpuesto(\AppBundle\Entity\Impuestos $idImpuesto = null)
+    public function setImpuesto(\AppBundle\Entity\Impuestos $impuesto = null)
     {
-        $this->idImpuesto = $idImpuesto;
+        $this->impuesto = $impuesto;
 
         return $this;
     }
 
     /**
-     * Get idImpuesto
+     * Get impuesto
      *
      * @return \AppBundle\Entity\Impuestos 
      */
-    public function getIdImpuesto()
+    public function getImpuesto()
     {
-        return $this->idImpuesto;
+        return $this->impuesto;
     }
 
     /**
-     * Set idMoneda
+     * Set moneda
      *
-     * @param \AppBundle\Entity\Monedas $idMoneda
+     * @param \AppBundle\Entity\Monedas $moneda
      * @return Paises
      */
-    public function setIdMoneda(\AppBundle\Entity\Monedas $idMoneda = null)
+    public function setIdMoneda(\AppBundle\Entity\Monedas $moneda = null)
     {
-        $this->idMoneda = $idMoneda;
+        $this->moneda = $moneda;
 
         return $this;
     }
 
     /**
-     * Get idMoneda
+     * Get moneda
      *
      * @return \AppBundle\Entity\Monedas 
      */
     public function getIdMoneda()
     {
-        return $this->idMoneda;
+        return $this->moneda;
     }
 
     public function __toString()

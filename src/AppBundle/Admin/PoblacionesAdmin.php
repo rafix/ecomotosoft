@@ -16,13 +16,12 @@ class PoblacionesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('poblacion')
-//            ->add('poblacion2')
-//            ->add('poblacion3')
-//            ->add('poblacion4')
-//            ->add('poblacion5')
-//            ->add('poblacion6')
-//            ->add('idPoblacion')
+            ->add('poblacion', null, array(
+                'label' => 'Población'
+            ))
+            ->add('idProvincia', null, array(
+                'label' => 'Provincia'
+            ))
         ;
     }
 
@@ -32,13 +31,12 @@ class PoblacionesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('poblacion')
-//            ->add('poblacion2')
-//            ->add('poblacion3')
-//            ->add('poblacion4')
-//            ->add('poblacion5')
-//            ->add('poblacion6')
-//            ->add('idPoblacion')
+            ->add('poblacion', null, array(
+                'label' => 'Población'
+            ))
+            ->add('idProvincia', null, array(
+                'label' => 'Provincia'
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -54,13 +52,12 @@ class PoblacionesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('poblacion')
-//            ->add('poblacion2')
-//            ->add('poblacion3')
-//            ->add('poblacion4')
-//            ->add('poblacion5')
-//            ->add('poblacion6')
-//            ->add('idPoblacion')
+            ->add('poblacion', null, array(
+                'label' => 'Población'
+            ))
+            ->add('idProvincia', null, array(
+                'label' => 'Provincia'
+            ))
         ;
     }
 
@@ -70,13 +67,12 @@ class PoblacionesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('poblacion')
-//            ->add('poblacion2')
-//            ->add('poblacion3')
-//            ->add('poblacion4')
-//            ->add('poblacion5')
-//            ->add('poblacion6')
-//            ->add('idPoblacion')
+            ->add('poblacion', null, array(
+                'label' => 'Población'
+            ))
+            ->add('idProvincia', null, array(
+                'label' => 'Provincia'
+            ))
         ;
     }
 }

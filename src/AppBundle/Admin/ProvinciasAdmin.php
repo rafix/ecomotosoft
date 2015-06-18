@@ -17,12 +17,7 @@ class ProvinciasAdmin extends Admin
     {
         $datagridMapper
             ->add('provincia')
-//            ->add('provincia2')
-//            ->add('provincia3')
-//            ->add('provincia4')
-//            ->add('provincia5')
-//            ->add('provincia6')
-//            ->add('idProvincia')
+            ->add('idPais')
         ;
     }
 
@@ -33,12 +28,9 @@ class ProvinciasAdmin extends Admin
     {
         $listMapper
             ->add('provincia')
-//            ->add('provincia2')
-//            ->add('provincia3')
-//            ->add('provincia4')
-//            ->add('provincia5')
-//            ->add('provincia6')
-//            ->add('idProvincia')
+            ->add('idPais', null, array(
+                'label' => 'País',
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -55,12 +47,9 @@ class ProvinciasAdmin extends Admin
     {
         $formMapper
             ->add('provincia')
-//            ->add('provincia2')
-//            ->add('provincia3')
-//            ->add('provincia4')
-//            ->add('provincia5')
-//            ->add('provincia6')
-//            ->add('idProvincia')
+            ->add('idPais', null, array(
+                'label' => 'País',
+            ))
         ;
     }
 
@@ -71,12 +60,7 @@ class ProvinciasAdmin extends Admin
     {
         $showMapper
             ->add('provincia')
-//            ->add('provincia2')
-//            ->add('provincia3')
-//            ->add('provincia4')
-//            ->add('provincia5')
-//            ->add('provincia6')
-//            ->add('idProvincia')
+            ->add('idPais')
         ;
     }
 }

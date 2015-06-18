@@ -16,8 +16,12 @@ class CodpostalesAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('codpostal')
-//            ->add('idCodpostal')
+            ->add('codpostal', null, array(
+                'label' => 'Código Postal'
+            ))
+            ->add('idPoblacion', null, array(
+                'label' => 'Población'
+            ))
         ;
     }
 
@@ -27,8 +31,12 @@ class CodpostalesAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('codpostal')
-//            ->add('idCodpostal')
+            ->add('codpostal', null, array(
+                'label' => 'Código Postal'
+            ))
+            ->add('idPoblacion', null, array(
+                'label' => 'Población'
+            ))
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -44,8 +52,12 @@ class CodpostalesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('codpostal')
-//            ->add('idCodpostal')
+            ->add('codpostal', null, array(
+                'label' => 'Código Postal'
+            ))
+            ->add('idPoblacion', null, array(
+                'label' => 'Población'
+            ))
         ;
     }
 
@@ -55,8 +67,12 @@ class CodpostalesAdmin extends Admin
     protected function configureShowFields(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('codpostal')
-//            ->add('idCodpostal')
+            ->add('codpostal', null, array(
+                'label' => 'Código Postal'
+            ))
+            ->add('idPoblacion', null, array(
+                'label' => 'Población'
+            ))
         ;
     }
 }
