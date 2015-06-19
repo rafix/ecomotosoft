@@ -100,9 +100,9 @@ class ModelosAdmin extends Admin
             ->add('ano', null, array(
                 'label' => 'Año'
             ))
-            ->add('cilindrada', null, array(
-                'label' => 'Cilindrada (cc)'
-            ))
+//            ->add('cilindrada', null, array(
+//                'label' => 'Cilindrada (cc)'
+//            ))
             ->add('combustible')
             ->add('fabricante', null, array(
                 'label' => 'Fabricante del Motor'
