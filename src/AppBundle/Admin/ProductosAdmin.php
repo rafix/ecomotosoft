@@ -29,6 +29,8 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
+            ->add('familia')
+            ->add('marca')
         ;
     }
 
@@ -42,12 +44,14 @@ class ProductosAdmin extends Admin
             ->add('descripcion', null, array(
                 'label' => 'Descripción'
             ))
-            ->add('ean13', null, array(
-                'label' => 'Código de barras'
-            ))
+//            ->add('ean13', null, array(
+//                'label' => 'Código de barras'
+//            ))
             ->add('pvp', null, array(
                 'label' => 'PVP'
             ))
+            ->add('familia')
+            ->add('marca')
 //            ->add('imagen1')
 //            ->add('imagen2')
 //            ->add('observaciones')
@@ -79,6 +83,8 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
+            ->add('familia')
+            ->add('marca')
         ;
     }
 
@@ -101,6 +107,8 @@ class ProductosAdmin extends Admin
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
+            ->add('familia')
+            ->add('marca')
         ;
     }
 }
