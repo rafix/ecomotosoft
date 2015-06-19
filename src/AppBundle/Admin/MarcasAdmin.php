@@ -20,7 +20,6 @@ class MarcasAdmin extends Admin
             ->add('web')
             ->add('tarifa')
             ->add('logo')
-//            ->add('idMarca')
         ;
     }
 
@@ -34,7 +33,6 @@ class MarcasAdmin extends Admin
             ->add('web')
             ->add('tarifa')
             ->add('logo')
-//            ->add('idMarca')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -54,7 +52,6 @@ class MarcasAdmin extends Admin
             ->add('web')
             ->add('tarifa')
             ->add('logo')
-//            ->add('idMarca')
         ;
     }
 
@@ -68,7 +65,6 @@ class MarcasAdmin extends Admin
             ->add('web')
             ->add('tarifa')
             ->add('logo')
-//            ->add('idMarca')
         ;
     }
 }
