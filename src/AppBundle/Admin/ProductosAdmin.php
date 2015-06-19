@@ -17,13 +17,18 @@ class ProductosAdmin extends Admin
     {
         $datagridMapper
             ->add('referencia')
-            ->add('descripcion')
-            ->add('ean13')
-            ->add('pvp')
+            ->add('descripcion', null, array(
+                'label' => 'Descripción'
+            ))
+            ->add('ean13', null, array(
+                'label' => 'Código de barras'
+            ))
+            ->add('pvp', null, array(
+                'label' => 'PVP'
+            ))
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-//            ->add('idProducto')
         ;
     }
 
@@ -34,13 +39,18 @@ class ProductosAdmin extends Admin
     {
         $listMapper
             ->add('referencia')
-            ->add('descripcion')
-            ->add('ean13')
-            ->add('pvp')
-            ->add('imagen1')
-            ->add('imagen2')
-            ->add('observaciones')
-//            ->add('idProducto')
+            ->add('descripcion', null, array(
+                'label' => 'Descripción'
+            ))
+            ->add('ean13', null, array(
+                'label' => 'Código de barras'
+            ))
+            ->add('pvp', null, array(
+                'label' => 'PVP'
+            ))
+//            ->add('imagen1')
+//            ->add('imagen2')
+//            ->add('observaciones')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -57,13 +67,18 @@ class ProductosAdmin extends Admin
     {
         $formMapper
             ->add('referencia')
-            ->add('descripcion')
-            ->add('ean13')
-            ->add('pvp')
+            ->add('descripcion', null, array(
+                'label' => 'Descripción'
+            ))
+            ->add('ean13', null, array(
+                'label' => 'Código de barras'
+            ))
+            ->add('pvp', null, array(
+                'label' => 'PVP'
+            ))
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-//            ->add('idProducto')
         ;
     }
 
@@ -74,13 +89,18 @@ class ProductosAdmin extends Admin
     {
         $showMapper
             ->add('referencia')
-            ->add('descripcion')
-            ->add('ean13')
-            ->add('pvp')
+            ->add('descripcion', null, array(
+                'label' => 'Descripción'
+            ))
+            ->add('ean13', null, array(
+                'label' => 'Código de barras'
+            ))
+            ->add('pvp', null, array(
+                'label' => 'PVP'
+            ))
             ->add('imagen1')
             ->add('imagen2')
             ->add('observaciones')
-//            ->add('idProducto')
         ;
     }
 }

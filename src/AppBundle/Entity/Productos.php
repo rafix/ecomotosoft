@@ -31,16 +31,16 @@ class Productos
     private $descripcion;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="ean13", type="integer", nullable=true)
+     * @ORM\Column(name="ean13", type="string", length=20, nullable=true)
      */
     private $ean13;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pvp", type="decimal", precision=10, scale=3, nullable=true)
+     * @ORM\Column(name="pvp", type="decimal", precision=10, scale=2, nullable=true)
      */
     private $pvp;
 
@@ -72,7 +72,7 @@ class Productos
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idProducto;
+    private $id;
 
     /**
      * @var \AppBundle\Entity\Familias
@@ -82,7 +82,7 @@ class Productos
      *   @ORM\JoinColumn(name="id_familia", referencedColumnName="id_familia")
      * })
      */
-    private $idFamilia;
+    private $familia;
 
     /**
      * @var \AppBundle\Entity\Marcas
@@ -92,7 +92,7 @@ class Productos
      *   @ORM\JoinColumn(name="id_marca", referencedColumnName="id_marca")
      * })
      */
-    private $idMarca;
+    private $marca;
 
 
 
@@ -146,7 +146,7 @@ class Productos
     /**
      * Set ean13
      *
-     * @param integer $ean13
+     * @param string $ean13
      * @return Productos
      */
     public function setEan13($ean13)
@@ -159,7 +159,7 @@ class Productos
     /**
      * Get ean13
      *
-     * @return integer 
+     * @return string
      */
     public function getEan13()
     {
@@ -259,59 +259,59 @@ class Productos
     }
 
     /**
-     * Get idProducto
+     * Get id
      *
      * @return integer 
      */
-    public function getIdProducto()
+    public function getId()
     {
-        return $this->idProducto;
+        return $this->id;
     }
 
     /**
-     * Set idFamilia
+     * Set familia
      *
-     * @param \AppBundle\Entity\Familias $idFamilia
+     * @param \AppBundle\Entity\Familias $familia
      * @return Productos
      */
-    public function setIdFamilia(\AppBundle\Entity\Familias $idFamilia = null)
+    public function setFamilia(\AppBundle\Entity\Familias $familia = null)
     {
-        $this->idFamilia = $idFamilia;
+        $this->familia = $familia;
 
         return $this;
     }
 
     /**
-     * Get idFamilia
+     * Get familia
      *
      * @return \AppBundle\Entity\Familias 
      */
-    public function getIdFamilia()
+    public function getFamilia()
     {
-        return $this->idFamilia;
+        return $this->familia;
     }
 
     /**
-     * Set idMarca
+     * Set marca
      *
-     * @param \AppBundle\Entity\Marcas $idMarca
+     * @param \AppBundle\Entity\Marcas $marca
      * @return Productos
      */
-    public function setIdMarca(\AppBundle\Entity\Marcas $idMarca = null)
+    public function setMarca(\AppBundle\Entity\Marcas $marca = null)
     {
-        $this->idMarca = $idMarca;
+        $this->marca = $marca;
 
         return $this;
     }
 
     /**
-     * Get idMarca
+     * Get marca
      *
      * @return \AppBundle\Entity\Marcas 
      */
-    public function getIdMarca()
+    public function getMarca()
     {
-        return $this->idMarca;
+        return $this->marca;
     }
 
     public function __toString()
