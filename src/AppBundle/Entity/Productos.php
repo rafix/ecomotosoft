@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation as Serializer;
 /**
  * Productos
  *
- * @ORM\Table(name="productos", uniqueConstraints={@ORM\UniqueConstraint(name="descripcion", columns={"descripcion"})}, indexes={@ORM\Index(name="id_marca", columns={"id_marca"}), @ORM\Index(name="id_familia", columns={"id_familia"})})
+ * @ORM\Table(name="productos", indexes={@ORM\Index(name="id_marca", columns={"id_marca"}), @ORM\Index(name="id_familia", columns={"id_familia"})})
  * @ORM\Entity
  *
  */
@@ -19,7 +19,7 @@ class Productos
     /**
      * @var string
      *
-     * @ORM\Column(name="referencia", type="string", length=15, nullable=true)
+     * @ORM\Column(name="referencia", type="string", length=50, nullable=true)
      */
     private $referencia;
 
