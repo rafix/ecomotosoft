@@ -200,7 +200,9 @@ class ModelosAdmin extends Admin
             ->add('ano', null, array(
                 'label' => 'Año'
             ))
-            ->add('cilindrada')
+            ->add('cilindrada', null, array(
+                'label' => 'Cilindrada (cc)'
+            ))
             ->add('homologacion', null, array(
                 'label' => 'Homologación'
             ))
@@ -212,35 +214,53 @@ class ModelosAdmin extends Admin
             ->add('numcilindros', null, array(
                 'label' => 'Número de Cilindros'
             ))
-            ->add('potencia')
+            ->add('potencia', null, array(
+                'label' => 'Potencia (Kw)'
+            ))
             ->add('db', null, array(
                 'label' => 'DB'
             ))
             ->add('rpm', null, array(
                 'label' => 'RPM'
             ))
-            ->add('distancia')
-            ->add('tara')
+            ->add('distancia', null, array(
+                'label' => 'Distancia (m)'
+            ))
+            ->add('tara', null, array(
+                'label' => 'Tara (Kg)'
+            ))
             ->add('mma', null, array(
-                'label' => 'MMA'
+                'label' => 'MMA (Kg)'
             ))
             ->add('asientos')
             ->add('neumaticos', null, array(
                 'label' => 'Neumáticos'
             ))
-            ->add('altura')
-            ->add('anchura')
-            ->add('longitud')
-            ->add('batalla')
+            ->add('altura', null, array(
+                'label' => 'Altura (mm)'
+            ))
+            ->add('anchura', null, array(
+                'label' => 'Anchura (mm)'
+            ))
+            ->add('longitud', null, array(
+                'label' => 'Longitud (mm)'
+            ))
+            ->add('batalla', null, array(
+                'label' => 'Batalla (mm)'
+            ))
             ->add('viaanterior', null, array(
-                'label' => 'Vía Anterior'
+                'label' => 'Vía Anterior (mm)'
             ))
             ->add('viaposterior', null, array(
-                'label' => 'Vía Posterior'
+                'label' => 'Vía Posterior (mm)'
             ))
-            ->add('limiteco')
+            ->add('limiteco', null, array(
+                'label' => 'Límite CO'
+            ))
             ->add('combustible')
-            ->add('fabricante')
+            ->add('fabricante', null, array(
+                'label' => 'Fabricante del Motor'
+            ))
             ->add('tipvehiculo', null, array(
                 'label' => 'Tipo de Vehículo'
             ))

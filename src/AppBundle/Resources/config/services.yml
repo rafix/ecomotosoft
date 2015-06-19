@@ -231,7 +231,7 @@ services:
         class: AppBundle\Admin\TipvehiculosAdmin
         arguments: [~, AppBundle\Entity\Tipvehiculos, AppBundle:TipvehiculosAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipos de Vehículos}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Tipos de Vehículo}
 
     app.admin.vehiculos:
         class: AppBundle\Admin\VehiculosAdmin
