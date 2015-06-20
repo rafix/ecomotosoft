@@ -44,7 +44,7 @@ class ModelosAdmin extends Admin
                 'label' => 'RPM'
             ))
             ->add('distancia', null, array(
-                'label' => 'Distancia (m)'
+                'label' => 'Distancia (mm)'
             ))
             ->add('tara', null, array(
                 'label' => 'Tara (Kg)'
@@ -153,7 +153,7 @@ class ModelosAdmin extends Admin
                 'label' => 'RPM'
             ))
             ->add('distancia', null, array(
-                'label' => 'Distancia (m)'
+                'label' => 'Distancia (mm)'
             ))
             ->add('tara', null, array(
                 'label' => 'Tara (Kg)'
@@ -233,7 +233,7 @@ class ModelosAdmin extends Admin
                 'label' => 'RPM'
             ))
             ->add('distancia', null, array(
-                'label' => 'Distancia (m)'
+                'label' => 'Distancia (mm)'
             ))
             ->add('tara', null, array(
                 'label' => 'Tara (Kg)'
