@@ -36,6 +36,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form_themes:
+        # other form themes
+        - 'VichUploaderBundle:Form:fields.html.twig'
     form:
         resources:
             - 'SonataCoreBundle:Form:datepicker.html.twig'
@@ -84,6 +87,24 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        marcas_logo:
+            uri_prefix:         /images/marcas
+            upload_destination: %kernel.root_dir%/../web/images/marcas
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true
+
+        productos_images:
+            uri_prefix:         /images/productos
+            upload_destination: %kernel.root_dir%/../web/images/productos
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true
 
 fos_user:
     db_driver:      orm # can be orm or odm
