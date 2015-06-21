@@ -80,11 +80,21 @@ class ProductosAdmin extends Admin
             ->add('pvp', null, array(
                 'label' => 'PVP'
             ))
-            ->add('imagen1')
-            ->add('imagen2')
             ->add('observaciones')
             ->add('familia')
             ->add('marca')
+            ->add('img1File', 'vich_image', array(
+                'label' => 'Imagen 1',
+                'required'      => false,
+                'allow_delete'  => true, // not mandatory, default is true
+                'download_link' => false, // not mandatory, default is true
+            ))
+            ->add('img2File', 'vich_image', array(
+                'label' => 'Imagen 2',
+                'required'      => false,
+                'allow_delete'  => true, // not mandatory, default is true
+                'download_link' => false, // not mandatory, default is true
+            ))
         ;
     }
 

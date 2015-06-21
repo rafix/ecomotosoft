@@ -12,6 +12,8 @@ web/js/*
 web/uploads/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
+web/images/marcas/*
+web/images/productos/*
 
 # -- Composer -----------------------------------------
 composer.phar

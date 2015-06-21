@@ -32,7 +32,7 @@ class MarcasAdmin extends Admin
             ->add('marca')
             ->add('web')
             ->add('tarifa')
-            ->add('logo')
+//            ->add('logo')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -52,9 +52,10 @@ class MarcasAdmin extends Admin
             ->add('web')
             ->add('tarifa')
             ->add('logoFile', 'vich_image', array(
+                'label' => 'Logo',
                 'required'      => false,
                 'allow_delete'  => true, // not mandatory, default is true
-                'download_link' => true, // not mandatory, default is true
+                'download_link' => false, // not mandatory, default is true
             ))
         ;
     }
